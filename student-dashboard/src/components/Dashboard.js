@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography, Box } from "@mui/material";
 import axios from "axios";
+
 import KPISection from "./KPISection";
 import ChartsSection from "./ChartsSection";
 import SimulationPanel from "./SimulationPanel";
@@ -9,40 +10,62 @@ import StudentTable from "./StudentTable";
 function Dashboard() {
 
   const [students, setStudents] = useState([]);
-  const [selectedStudent, setSelectedStudent] = useState(null);
-  const [result, setResult] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/students")
-      .then(res => setStudents(res.data))
-      .catch(err => console.error(err));
+    axios
+      .get("http://127.0.0.1:5000/students")
+      .then((res) => {
+        setStudents(res.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching students:", err);
+        setLoading(false);
+      });
   }, []);
 
-  return (
-    <Container maxWidth="xl" sx={{ mt: 3 }}>
-      <Typography variant="h4" gutterBottom>
-        Student Retention Risk Dashboard
-      </Typography>
+  if (loading) {
+    return (
+      <Container maxWidth="xl" sx={{ mt: 5 }}>
+        <Typography variant="h5">Loading Dashboard...</Typography>
+      </Container>
+    );
+  }
 
+  return (
+    <Container maxWidth="xl" sx={{ mt: 4, mb: 5 }}>
+
+      {/* HEADER */}
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h4" fontWeight="bold">
+          Student Retention Risk Dashboard
+        </Typography>
+      </Box>
+
+      {/* KPI CARDS */}
       <KPISection students={students} />
 
-      <Grid container spacing={3} sx={{ mt: 2 }}>
-        <Grid item xs={12} md={8}>
+      {/* MAIN SECTION */}
+      <Grid container spacing={4} sx={{ mt: 2 }}>
+
+        {/* LEFT – BIG PIE */}
+        <Grid item xs={12} md={6}>
           <ChartsSection students={students} />
         </Grid>
 
-        <Grid item xs={12} md={4}>
-          <SimulationPanel
-            students={students}
-            selectedStudent={selectedStudent}
-            setSelectedStudent={setSelectedStudent}
-            setResult={setResult}
-            result={result}
-          />
+        {/* RIGHT – PREDICTION */}
+        <Grid item xs={12} md={6}>
+          <SimulationPanel students={students} />
         </Grid>
+
       </Grid>
 
-      <StudentTable students={students} />
+      {/* TABLE */}
+      <Box sx={{ mt: 4 }}>
+        <StudentTable students={students} />
+      </Box>
+
     </Container>
   );
 }

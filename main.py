@@ -7,7 +7,9 @@ from train_model import train_model
 # 1️⃣ Load Data
 # ==============================
 
-df = pd.read_csv(r"C:\Users\Bhavesh P Dalvi\OneDrive\Documents\Student Retention Risk Scoring Model for Higher Education Institutions. (Responses) -166.csv")
+df = pd.read_csv(
+    r"C:\Users\Bhavesh P Dalvi\OneDrive\Documents\Student Retention Risk Scoring Model for Higher Education Institutions. (Responses) -166.csv"
+)
 df.columns = df.columns.str.strip()
 
 print("Original Shape:", df.shape)
@@ -77,7 +79,6 @@ for col in gpa_cols:
 
 df = df[(df['backlog_count'] >= 0) & (df['backlog_count'] <= 20)]
 
-# ==============================
 # 6️⃣ Feature Engineering
 # ==============================
 
@@ -93,7 +94,17 @@ event_map = {
 }
 df['event_score'] = df['event_participation'].map(event_map)
 
-df['dropout_flag'] = df['dropout_thought'].map({'Yes': 1, 'Maybe': 1, 'No': 0})
+# 🔥 NEW IMPROVED DROPOUT RISK LOGIC
+
+df['risk_score'] = 0
+
+df.loc[df['avg_gpa'] < 6.5, 'risk_score'] += 1
+df.loc[df['attendance'] < 70, 'risk_score'] += 1
+df.loc[df['backlog_count'] > 0, 'risk_score'] += 1
+df.loc[df['event_score'] <= 1, 'risk_score'] += 1
+
+# High risk if total score >= 2
+df['dropout_risk'] = np.where(df['risk_score'] >= 2, 1, 0)
 
 # ==============================
 # 🔥 7️⃣ KEEP DISPLAY COPY
@@ -130,7 +141,9 @@ features = [
 ]
 
 X = df_encoded[features]
-y = df_encoded['dropout_flag']
+
+# ✅ CORRECT TARGET
+y = df_encoded['dropout_risk']
 
 # ==============================
 # 🔥 1️⃣0️⃣ SAVE BOTH FILES
@@ -146,3 +159,8 @@ print("Datasets saved successfully!")
 # ==============================
 
 model = train_model(X, y)
+
+print("Model trained successfully!")
+
+print("Dropout Risk Distribution:")
+print(df['dropout_risk'].value_counts())

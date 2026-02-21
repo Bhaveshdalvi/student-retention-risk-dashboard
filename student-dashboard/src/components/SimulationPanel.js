@@ -31,7 +31,8 @@ import {
 import GaugeChart from "react-gauge-chart";
 
 function SimulationPanel({ students }) {
-  const [selectedStudent, setSelectedStudent] = useState(null);
+
+  const [selectedStudent, setSelectedStudent] = useState("");
   const [result, setResult] = useState(null);
 
   const handlePredict = async () => {
@@ -46,21 +47,21 @@ function SimulationPanel({ students }) {
   };
 
   return (
-    <Paper elevation={3} style={{ padding: 30, marginTop: 20 }}>
+    <Paper elevation={3} sx={{ p: 4, mt: 3 }}>
       <Grid container spacing={4}>
 
-        {/* LEFT: STUDENT SELECTION */}
+        {/* LEFT PANEL */}
         <Grid item xs={12} md={4}>
-          <Card elevation={2}>
+          <Card elevation={3}>
             <CardContent>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h6" gutterBottom>
                 Student Risk Prediction
               </Typography>
 
               <FormControl fullWidth>
                 <InputLabel>Select Student</InputLabel>
                 <Select
-                  value={selectedStudent || ""}
+                  value={selectedStudent}
                   onChange={(e) => setSelectedStudent(e.target.value)}
                 >
                   {students.map((student) => (
@@ -75,7 +76,7 @@ function SimulationPanel({ students }) {
                 variant="contained"
                 fullWidth
                 size="large"
-                style={{ marginTop: 20 }}
+                sx={{ mt: 3 }}
                 onClick={handlePredict}
               >
                 PREDICT RISK
@@ -84,14 +85,14 @@ function SimulationPanel({ students }) {
           </Card>
         </Grid>
 
-        {/* CENTER + RIGHT VISUAL AREA */}
+        {/* RIGHT VISUAL AREA */}
         <Grid item xs={12} md={8}>
           {result && selectedStudent && (
             <Grid container spacing={3}>
 
-              {/* CENTER: GAUGE */}
+              {/* GAUGE */}
               <Grid item xs={12} md={6}>
-                <Card elevation={2}>
+                <Card elevation={3}>
                   <CardContent>
                     <Typography variant="h6">
                       Risk Meter
@@ -104,15 +105,17 @@ function SimulationPanel({ students }) {
                       colors={["#4CAF50", "#FFC107", "#F44336"]}
                       arcWidth={0.3}
                       textColor="#000000"
-                      formatTextValue={(value) => `${value}%`}
+                      formatTextValue={() =>
+                        `${(result.probability * 100).toFixed(2)}%`
+                      }
                     />
                   </CardContent>
                 </Card>
               </Grid>
 
-              {/* RIGHT: SUMMARY CARD */}
+              {/* SUMMARY CARD */}
               <Grid item xs={12} md={6}>
-                <Card elevation={2}>
+                <Card elevation={3}>
                   <CardContent>
                     <Typography variant="h4">
                       {(result.probability * 100).toFixed(2)}%
@@ -129,17 +132,13 @@ function SimulationPanel({ students }) {
                           ? "error"
                           : "success"
                       }
-                      style={{ marginTop: 10 }}
+                      sx={{ mt: 1 }}
                     />
 
-                    <Divider style={{ margin: "15px 0" }} />
+                    <Divider sx={{ my: 2 }} />
 
-                    <Typography>
-                      Course: {selectedStudent.course}
-                    </Typography>
-                    <Typography>
-                      Year: {selectedStudent.year}
-                    </Typography>
+                    <Typography>Course: {selectedStudent.course}</Typography>
+                    <Typography>Year: {selectedStudent.year}</Typography>
                     <Typography>
                       Attendance: {selectedStudent.attendance}%
                     </Typography>
@@ -153,9 +152,9 @@ function SimulationPanel({ students }) {
                 </Card>
               </Grid>
 
-              {/* FULL WIDTH: RISK COMPARISON */}
+              {/* RISK COMPARISON */}
               <Grid item xs={12}>
-                <Card elevation={2}>
+                <Card elevation={3}>
                   <CardContent>
                     <Typography variant="h6">
                       Risk Comparison
@@ -190,9 +189,9 @@ function SimulationPanel({ students }) {
                 </Card>
               </Grid>
 
-              {/* FULL WIDTH: GPA TREND */}
+              {/* GPA TREND */}
               <Grid item xs={12}>
-                <Card elevation={2}>
+                <Card elevation={3}>
                   <CardContent>
                     <Typography variant="h6">
                       GPA Trend (Semester-wise)

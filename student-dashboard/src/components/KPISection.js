@@ -5,8 +5,9 @@ function KPISection({ students }) {
 
   const total = students.length;
 
+  // ✅ FIXED: use dropout_risk instead of dropout_flag
   const highRisk = students.filter(
-    (s) => s.dropout_flag === 1
+    (s) => Number(s.dropout_risk) === 1
   ).length;
 
   const avgAttendance = total > 0
@@ -31,17 +32,20 @@ function KPISection({ students }) {
     { title: "Avg Attendance", value: avgAttendance + "%" },
     { title: "Avg GPA", value: avgGPA },
     { title: "Retention Rate", value: retentionRate + "%" },
-    
   ];
 
   return (
     <Grid container spacing={3}>
       {cards.map((card, index) => (
-        <Grid item xs={12} md={3} key={index}>
+        <Grid item xs={12} md={2.4} key={index}>
           <Card elevation={4}>
             <CardContent>
-              <Typography>{card.title}</Typography>
-              <Typography variant="h5">{card.value}</Typography>
+              <Typography variant="subtitle2">
+                {card.title}
+              </Typography>
+              <Typography variant="h5">
+                {card.value}
+              </Typography>
             </CardContent>
           </Card>
         </Grid>

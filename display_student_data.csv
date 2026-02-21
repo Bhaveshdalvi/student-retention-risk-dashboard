@@ -1,163 +1,163 @@
-Email Address,name,age,gender,course,year,attendance,gpa_sem1,gpa_sem2,gpa_sem3,gpa_sem4,gpa_sem5,backlog_status,backlog_count,In which semesters did you have backlogs?,dropout_thought,event_participation,What type of college activities do you usually participate in?,What is your favorite activity or hobby?,avg_gpa,has_backlog,event_score,dropout_flag
-karanthakur809761@gmail.com,Karan Thakur ,20.0,Male,Bsc Data science ,TY,70.0,7.8,8.7,6.8,6.7,8.2,No,0.0,Semester 3,No,Rarely,,Football,7.640000000000001,0,1,0
-prabhatqrsyadav@gmail.com,Prabhat yadav,19.0,Male,Data science ,SY,70.26701754385965,7.2,7.1,7.5,8.4,8.75,No,0.0,,Yes,Occasionally,"Academic competitions, Cultural events, Sports",Football ,7.790000000000001,0,2,1
-sharmaadityaa1755@gmail.com,ADITYA RAJESH SHARMA ,20.0,Male,BSC DATA SCIENCE ,TY,70.26701754385965,9.0,9.5,8.3,8.3,9.0,No,0.0,,No,Rarely,"Sports, Workshops/seminars",My favorite hobby is learning new technologies and working on data-related projects.  Or hobby is  playing sports ,8.82,0,1,0
-koreadarsh569@gmail.com,Adarsh Sadashiv Kore ,20.0,Male,20,TY,69.0,9.2,9.8,9.2,9.6,9.2,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars","Cycling, Swimming, Reading, Travelling, Listening Songs ",9.4,0,3,0
-santoshyadav7021646181@gmail.com,Santosh Yadav ,20.0,Male,Data science ,TY,100.0,9.9,9.9,9.9,9.9,9.9,No,0.0,,No,Occasionally,Sports,To take holidays from college ,9.9,0,2,0
-vedantg987@gmail.com,Vedant gupta ,21.0,Male,Bsc it,TY,80.0,7.8,7.1,7.9,7.9,7.8,Yes,3.0,"Semester 1, Semester 3",No,Rarely,Sports,Volleyball ,7.699999999999998,1,1,0
-hussainshaikh30hs@gmail.com,Hussain shaikh ,21.0,Male,Bsc data science ,TY,50.0,8.0,7.0,7.0,8.4,8.75,Yes,2.0,"Semester 3, Semester 4",No,Occasionally,Cultural events,Writing poem shayari etc,7.83,1,2,0
-umanggupta1832006@gmail.com,Umang gupta ,20.0,Male,BSC IT ,TY,80.0,7.2,7.2,7.5,8.5,8.2,No,0.0,Semester 1,No,Rarely,Cultural events,Animation ,7.719999999999999,0,1,0
-saurabhyadav7039346896@gmail.com,Saurabh Sanjay Yadav ,20.0,Male,Bsc Data science ,TY,70.26701754385965,8.5,9.4,8.6,9.1,8.8,Yes,1.0,Semester 3,No,Rarely,Workshops/seminars,"Reading books, cricket and coding ",8.88,1,1,0
-malharmane595611@gmail.com,Malhar Mane,22.0,Male,Digital Marketing ,TY,70.26701754385965,8.9,8.9,9.5,9.2,9.8,No,0.0,,No,Rarely,Sports,Gym and Reading ,9.26,0,1,0
-chiragmishra1305@gmail.com,Chirag mishra,19.0,Male,Data science,TY,50.0,8.5,8.6,7.0,7.1,8.5,No,0.0,,No,Rarely,Sports, sports ,7.94,0,1,0
-wadiarudra82@gmail.com,Rudra,20.0,Male,Bfm,TY,77.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Cultural events,Music,8.402000000000001,0,1,0
-singhsarvtej@gmail.com,Sarvtej Singh Bomrha ,20.0,Male,Bcom,TY,78.0,7.0,6.0,8.0,8.0,8.0,Yes,2.0,Semester 2,Yes,Regularly,"Academic competitions, Cultural events",Stand up comedy ,7.4,1,3,1
-divyavaranjani160803@gmail.com,Divya Varanjani ,22.0,Female,MBA ,SY,80.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,,Book reading ,8.402000000000001,0,0,0
-gavincardoz1701@gmail.com,Gavin,24.0,Male,Data science ,TY,70.26701754385965,8.0,8.0,9.0,9.5,10.0,No,0.0,,Yes,Never,,Sleeping,8.9,0,0,1
-shraddhapandey0606@gmail.com,Shraddha pandey,21.0,Female,Bsc botany ,TY,70.0,9.1,9.0,8.5,9.0,8.9,No,0.0,,No,Occasionally,Cultural events,Travelling ,8.9,0,2,0
-kanishkwagh69@gmail.com,Kanishk,20.0,Male,Data Science ,TY,70.26701754385965,9.1,8.9,6.8,6.1,9.3,No,0.0,,Maybe,Rarely,Cultural events,Trekking,8.040000000000001,0,1,1
-nehemiahkollabathula77@gmail.com,Nehemiah K,19.0,Male,Data Science,TY,10.0,8.2,8.9,8.0,8.8,8.9,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Studying new technologies ,8.56,0,2,0
-rangeelachoudhary2403@gmail.com,Rangeela choudhary,21.0,Female,Data sciences ,TY,60.0,8.9,9.8,7.5,8.5,9.0,No,0.0,,Maybe,Occasionally,"Academic competitions, Workshops/seminars",Badminton ,8.74,0,2,1
-rachitkhare296@gmail.com,Rachit Khare ,20.0,Male,B pharm ,SY,70.26701754385965,6.9,6.8,8.3,8.4,8.75,No,0.0,,Maybe,Rarely,,Kite flying ,7.83,0,1,1
-aryanrathoreop@gmail.com,Aryan Rathore ,20.0,Male,Information Technology,TY,76.0,7.77,7.56,8.08,8.18,9.59,No,0.0,,No,Rarely,Cultural events,Coding,8.235999999999999,0,1,0
-pandeysneha803@gmail.com,Sneha Pandey ,19.0,Female,TYBA,TY,90.0,8.16,8.4,9.32,9.16,9.16,No,0.0,,No,Occasionally,"Academic competitions, Cultural events, Workshops/seminars",Reading ,8.84,0,2,0
-rasrassawant@gmail.com,Rasika Abhijit Sawant ,20.0,Female,BA,TY,70.26701754385965,7.91,7.86,8.3,7.98,7.78,No,0.0,,No,Regularly,Academic competitions,Dance and reading ,7.965999999999999,0,3,0
-simransihan099@gmail.com,Simran Sihan ,20.0,Female,Bsc DS,TY,80.0,9.3,9.9,7.7,8.9,8.7,No,0.0,,No,Regularly,"Academic competitions, Sports, Workshops/seminars, Social service / NSS",Reading ,8.9,0,3,0
-gandhikrish838@gmail.com,Krish Gandhi,20.0,Male,BAMMC,TY,70.26701754385965,7.0,7.9,8.8,8.7,8.3,No,0.0,,No,Never,,none,8.14,0,0,0
-diwansrd@gmail.com,Sandeep Diwan ,20.0,Male,Data science ,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Social service / NSS",To meditate & stay consistent is my hobby.,8.402000000000001,0,3,0
-mathiasryan270405@gmail.com,Ryan Mathias ,20.0,Male,Bachelor of Management Studies ,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars",Listening to Music ,8.402000000000001,0,3,0
-eshaan.singh0812@gmail.com,ESHAAN SINGH,20.0,Male,BAF,SY,54.0,7.16,9.0,9.13,8.4,8.75,Yes,1.0,Semester 1,No,Never,Sports,CAR PHOTOGRAPHY ,8.488,1,0,0
-ajithnaidu097@gmail.com,Ajith Sampath Naidu,19.0,Male,Bsc Data Science ,TY,70.26701754385965,7.8,9.2,8.8,7.4,8.7,No,0.0,Semester 3,No,Occasionally,Sports,Going to Gym,8.38,0,2,0
-singhsarvtej@gmail.com,Sarvtej Singh ,20.0,Male,Bcom ,TY,78.0,7.0,7.0,8.0,8.0,8.0,No,0.0,,Yes,Regularly,"Academic competitions, Cultural events, Sports",Poetry ,7.6,0,3,1
-killeryt18102005@gmail.com,Eshaan solanki ,20.0,Male,Bcom,TY,0.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,,,8.402000000000001,0,0,0
-nirmalab1508@gmail.com,Nirmala bhandare ,25.0,Female,Interior designing,FY,70.0,7.6,8.8,9.3,8.9,7.6,No,0.0,,Yes,Regularly,,Music,8.440000000000001,0,3,1
-bhandariaryan1511@gmail.com,Aryan Bhandari ,20.0,Male,Computer Engineer ,TY,78.0,7.0,8.0,6.0,7.0,8.75,No,0.0,,No,Never,Academic competitions,Playing Cricket,7.35,0,0,0
-gurkiratkhatoroda@gmail.com,Gurvinder Pal Singh Khatoroda,20.0,Male,BE. IT,TY,70.26701754385965,9.5,8.14,8.36,8.64,9.36,No,0.0,,Maybe,Rarely,Academic competitions,Hanging out with friends,8.8,0,1,1
-kashafshah665@gmail.com,kashaf shah,20.0,Female,data science,TY,70.26701754385965,9.2,9.8,8.8,8.6,9.4,No,0.0,,No,Rarely,"Cultural events, Sports","doing nothing , relaxing ",9.16,0,1,0
-yadavvishal20067@gmail.com,Vishal Yadav,19.0,Male,Bachelor of Pharmacy,SY,70.26701754385965,6.85,8.4,8.3,8.4,8.75,Yes,1.0,Semester 2,No,Occasionally,"Cultural events, Sports, Social service / NSS",Volleyball and E-Sport,8.14,1,2,0
-anishsawant0721@gmail.com,Anish Sadashiv Sawant ,19.0,Male,Computer Engineering ,TY,80.0,8.5,8.35,8.7,8.25,8.75,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Cricket ,8.51,0,2,0
-alfahadmalik00@gmail.com,Alfahad Malik,21.0,Male,Computer engineering ,TY,80.0,6.9,7.2,8.5,9.2,8.75,No,0.0,,No,Rarely,Social service / NSS,Playing outdoor games ,8.11,0,1,0
-karansunilrathod@gmail.com,Karan Rathod ,20.0,Male,Data Science ,TY,69.0,7.4,8.1,7.0,6.2,8.75,Yes,3.0,Semester 3,Maybe,Occasionally,"Sports, Workshops/seminars","Chess, Cricket ",7.49,1,2,1
-umesh.yadav6623@gmail.com,Umesh Yadav ,20.0,Male,Data science ,TY,71.0,8.5,9.0,8.8,8.8,9.2,Yes,1.0,Semester 4,No,Never,,Sleeping ,8.86,1,0,0
-rudvegmat@gmail.com,Rudveg Matwankar ,20.0,Male,Data Science ,TY,70.0,9.4,9.8,9.0,9.5,9.5,No,0.0,,No,Regularly,"Academic competitions, Sports, Workshops/seminars","Exploring Music, reading ",9.440000000000001,0,3,0
-upadhyaynaitik63@gmail.com,Naitik Upadhyay ,21.0,Male,Data science ,TY,70.26701754385965,7.8,9.2,6.8,7.9,8.3,Yes,1.0,Semester 4,No,Regularly,Workshops/seminars,Cricket ,8.0,1,3,0
-avinashchauhan21a@gmail.com,Avinash Chauhan ,20.0,Male,Data science ,TY,60.0,9.2,9.5,8.5,9.5,8.7,No,0.0,,No,Occasionally,Sports,Sports ,9.080000000000002,0,2,0
-jaisneeraj2005@gmail.com,Neeraj Kharbhan Jaiswar ,20.0,Male,Data science ,TY,55.84,7.5,8.5,7.3,7.3,8.7,No,0.0,,No,Rarely,"Sports, Workshops/seminars",Hwiwwishsb,7.859999999999999,0,1,0
-singhriddhi398@gmail.com,Riddhi Dhananjay Singh ,19.0,Female,Data Science ,TY,70.26701754385965,8.4,8.8,6.9,7.3,9.2,No,0.0,,No,Rarely,Workshops/seminars,Dance ,8.120000000000001,0,1,0
-sandeepmahto1881@gmail.com,Sandeep Dhruv Mahto ,21.0,Male,Ds,TY,70.26701754385965,8.8,9.2,8.5,8.4,9.0,No,0.0,,No,Never,Sports,Cricket ,8.78,0,0,0
-dsouzachris220805@gmail.com,Chris Dsouza,20.0,Male,Bcom,TY,70.26701754385965,5.0,5.0,5.0,5.0,5.0,Yes,5.0,"Semester 1, Semester 2, Semester 3, Semester 4",No,Regularly,"Cultural events, Sports, Social service / NSS",coverage,5.0,1,3,0
-angadg720@gmail.com,Angad Gupta ,19.0,Male,Information technology ,TY,60.0,6.3,6.5,7.0,6.8,6.0,Yes,0.0,,No,Rarely,Social service / NSS,Ridding ,6.5200000000000005,1,1,0
-sarwadeepmedhe45@gmail.com,Sarwadeep,20.0,Male,Data science,TY,55.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,"Academic competitions, Sports, Workshops/seminars",Maze,8.402000000000001,0,1,0
-vnkatpara@gmail.com,Vivek Naresh Katpara,20.0,Male,Data science,TY,44.0,9.2,9.6,8.4,9.2,8.7,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",I love to participate in hackathons and other technical events,9.02,0,2,0
-ogalesarthak44@gmail.com,Sarthak Ogale ,22.0,Male,B.Sc. CS,TY,65.0,8.16,8.4,8.3,8.4,8.75,Yes,0.0,"Semester 2, Semester 3",No,Occasionally,"Academic competitions, Workshops/seminars",Martial Arts and Physical fitness related activities ,8.402000000000001,1,2,0
-zakirsheikh534@gmail.com,Zakir shaikh,19.0,Male,Computer science ,TY,40.0,6.0,6.3,6.7,8.4,8.75,Yes,2.0,"Semester 4, Semester 5",No,Regularly,Sports,Sports ,7.2299999999999995,1,3,0
-ladsanhil700@gmail.com,Sanhil lad,20.0,Male,Computer Science ,TY,70.26701754385965,8.0,7.65,9.1,8.45,8.95,No,0.0,,No,Never,Academic competitions,"Reading,  listening  music",8.430000000000001,0,0,0
-rachit22805@gmail.com,Rachit Piwlatkar,20.0,Male,BSC CS,TY,91.0,9.3,9.6,10.0,9.8,8.25,No,0.0,,No,Never,,"Playing games, Reading book, Listening to music",9.39,0,0,0
-vipulmanojgupta1994@gmail.com,Vipul gupta ,20.0,Male,Bsc cs ,SY,50.0,6.5,6.5,6.5,8.4,8.75,Yes,2.0,"Semester 2, Semester 3",Maybe,Regularly,Cultural events,Carrom ,7.33,1,3,1
-gaurangtiwari22@gmail.com,Gaurang Tiwari,21.0,Male,BSC IT,TY,80.0,8.5,7.5,7.5,8.5,8.7,Yes,1.0,Semester 3,No,Never,,,8.14,1,0,0
-3277aryanthesia@gmail.com,Aryan thesia,20.0,Male,Bsc It,TY,80.0,8.52,7.52,6.7,7.3,6.8,No,0.0,,No,Rarely,Cultural events,Cricket,7.367999999999999,0,1,0
-10f.tusharkashyap@gmail.com,Tushar kashyap ,20.0,Male,Ds,TY,50.0,8.0,9.5,8.0,7.5,9.2,No,0.0,,Maybe,Rarely,Sports,Combatsports,8.440000000000001,0,1,1
-rm2380132@gmail.com,Rohit Maurya ,21.0,Male,Data science ,TY,70.26701754385965,8.16,8.4,10.0,9.9,9.8,No,0.0,,Maybe,Never,Sports,"Carrom, cricket, badminton, ",9.252,0,0,1
-sandeepmahto1881@gmail.com,Sandeep Mahto ,21.0,Male,Data science ,TY,99.0,8.2,9.4,8.6,8.2,9.0,No,0.0,,Maybe,Never,,Sport,8.680000000000001,0,0,1
-riteshnaik5664@gmail.com,Ritesh naik ,21.0,Male,Data science ,TY,90.0,9.0,9.0,9.0,9.0,9.0,Yes,0.0,,Maybe,Regularly,"Academic competitions, Cultural events, Workshops/seminars, Social service / NSS",Na,9.0,1,3,1
-amrutamore567@gmail.com,Amruta namdeo more,21.0,Female,Bsc data science ,TY,75.0,9.8,10.0,9.5,9.5,9.5,No,0.0,,No,Occasionally,"Academic competitions, Cultural events, Sports, Workshops/seminars, Social service / NSS",Dancing ,9.66,0,2,0
-yashpokle1234@gmail.com,Yash pokle,20.0,Male,Ds,TY,50.0,8.9,7.2,9.1,7.2,8.8,No,0.0,,No,Regularly,Cultural events,Music,8.24,0,3,0
-mr0069558@gmail.com,Roman rings ,22.0,Male,Bsc.Data science ,TY,69.0,8.4,8.2,7.1,6.1,7.2,No,0.0,,No,Rarely,"Sports, Workshops/seminars",Sports ,7.400000000000001,0,1,0
-parkbryce25@gmail.com,Bryce park ,19.0,Male,AME ,FY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Sports",Cycling and bodybuilding ,8.402000000000001,0,3,0
-navleaditya69@gmail.com,Aditya Ashok Navle ,18.0,Male,Aircraft maintenance engineering ,FY,95.0,9.8,9.5,9.9,9.9,9.7,No,0.0,,Yes,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars",Drawing,9.76,0,3,1
-suvarnabaile35@gmail.com,Deepanshu Dipak Baile ,19.0,Male,Bsc aeronautics ,FY,99.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,"Academic competitions, Cultural events, Sports, Workshops/seminars",Racing ,8.402000000000001,0,0,0
-shaharya2006@gmail.com,Arya Shah,19.0,Male,bms-sy,SY,68.0,7.18,8.18,8.5,8.4,8.75,No,0.0,,Maybe,Occasionally,,"gaming,series,music,sleeping",8.202,0,2,1
-asifansari929487@gmail.com,Mohammad Asif Ansari ,19.0,Male,BMS,SY,70.26701754385965,6.9,7.09,7.5,8.0,8.5,No,0.0,,No,Never,Sports,No,7.598000000000001,0,0,0
-thakurrishi96197@gmail.com,Rishikesh Bipin Thakur ,19.0,Male,BMS,SY,70.26701754385965,6.79,7.73,8.27,8.4,8.75,Yes,2.0,Semester 1,Maybe,Rarely,,Playing online games ,7.9879999999999995,1,1,1
-sy2268768@gmail.com,Shubham yadav ,19.0,Male,BMS,SY,89.0,8.0,8.9,8.35,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Cultural events, Sports",Sports ,8.48,0,2,0
-atharvathakur87627@gmail.com,Atharva Dinesh Thakur,20.0,Male,Bsc IT,TY,20.0,5.68,6.9,5.5,7.0,6.5,Yes,3.0,"Semester 2, Semester 3, Semester 4",No,Never,,Cricket,6.316,1,0,0
-yashvishwakarma012@gmail.com,YV,20.0,Male,cs,SY,70.26701754385965,8.1,8.56,8.91,8.4,8.75,No,0.0,,Maybe,Occasionally,Sports,chess,8.544,0,2,1
-yuvrajmatondkar@gmail.com,Yuvraj Matondkar,19.0,Male,Tyce Polytechnic ,TY,70.26701754385965,8.0,8.2,7.4,8.5,8.6,No,0.0,,No,Occasionally,Sports,sleeping,8.14,0,2,0
-annu.a.sharma932@gmail.com,Annu sharma ,18.0,Female,Microbiology ,FY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars, Social service / NSS",Research ,8.402000000000001,0,2,0
-pawamsahu2000@gmail.com,Pawan sahu,20.0,Male,BSc (IT),TY,60.0,6.9,6.9,7.4,8.4,7.2,Yes,0.0,Semester 1,No,Rarely,"Academic competitions, Workshops/seminars",Playing Cricket,7.360000000000001,1,1,0
-suryaaa.211817@gmail.com,Surya mahesh poonusamy,19.0,Male,baf,FY,100.0,8.45,9.42,8.42,8.0,7.52,No,0.0,,No,Regularly,"Cultural events, Sports",Sports day,8.362,0,3,0
-adityakahar61@gmail.com,Aryan kahar,19.0,Male,Bsc cs ,SY,2.0,8.16,8.4,8.3,8.4,8.75,Yes,1.0,"Semester 1, Semester 3",Yes,Rarely,,Filing this form 😊,8.402000000000001,1,1,1
-singhsidhant727@gmail.com,Sidhant singh ,20.0,Male,Bsc it,SY,30.0,6.0,7.0,8.3,8.4,8.75,No,0.0,Semester 3,Maybe,Occasionally,Academic competitions,Reading ,7.69,0,2,1
-deevmadhani@gmail.com,Manav Sharma ,20.0,Female,Co,SY,20.0,8.16,8.4,8.3,8.4,8.75,Yes,10.0,"Semester 1, Semester 2, Semester 3, Semester 4, Semester 5, None",Yes,Never,"Academic competitions, Cultural events, Sports, Workshops/seminars, Social service / NSS, None",Seeing reels on Instagram ,8.402000000000001,1,0,1
-bhogleneel@gmail.com,Neel Bhogle ,19.0,Male,Mechanical engineering ,SY,59.0,8.16,8.4,8.3,8.4,8.75,Yes,2.0,"Semester 1, Semester 3",Maybe,Regularly,"Academic competitions, Cultural events, Workshops/seminars",Engineering /design /music,8.402000000000001,1,3,1
-aryanganji18@gmail.com,aryan,20.0,Male,Bms,TY,75.0,9.0,6.0,7.0,8.0,9.0,No,0.0,,Maybe,Never,Sports,.,7.8,0,0,1
-divyanshyadav1864@gmail.com,Divyansh ,20.0,Male,Bms,TY,0.0,5.0,5.0,5.0,6.0,7.0,Yes,8.0,"Semester 3, Semester 4, Semester 5",Yes,Occasionally,Sports,Chhinaragiri,5.6,1,2,1
-abhishekrkashyap2005@gmail.com,Abhishek kashyap ,20.0,Male,Bms,TY,89.0,7.0,8.1,8.3,8.4,8.3,No,10.0,Semester 5,No,Rarely,Social service / NSS,Drawing ,8.02,0,1,0
-tiwariankush355@gmail.com,Ankush ,20.0,Male,Bms ,TY,80.0,5.0,5.8,7.3,8.7,8.75,No,0.0,,No,Occasionally,"Cultural events, Sports",  cricket ,7.109999999999999,0,2,0
-tripathisiddhant2006@gmail.com,Siddhant Tripathi ,19.0,Male,IT,SY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,Yes,2.0,"Semester 2, Semester 3",No,Rarely,"Sports, None",To play cricket ,8.402000000000001,1,1,0
-rathodneel116@gmail.com, Sarthak manav shah,20.0,Female,Civil Engineering ,SY,70.26701754385965,8.16,8.4,8.3,8.4,0.0,No,0.0,,Maybe,Rarely,"Academic competitions, Cultural events, Workshops/seminars, Social service / NSS, None",Eat and sleep dont come to school,6.652000000000001,0,1,1
-faizanpadiyar328@gmail.com,MOHAMMAD FAIZAN ,18.0,Male,TYCO,TY,87.6,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,Sports,Cricket ,8.402000000000001,0,0,0
-sarita1980.pandey@gmail.com,Tridev Rameshchandra Pandey ,17.1,Male,Bsc.it,FY,70.26701754385965,8.18,8.4,8.3,8.4,8.75,No,0.0,,Yes,Rarely,"Workshops/seminars, Social service / NSS","Reading books , painting.",8.406,0,1,1
-buntyboi1432@gmail.com,Vineet Chauhan ,19.0,Male,Cs,FY,85.0,8.59,8.4,8.3,8.4,8.75,Yes,1.0,Semester 1,No,Rarely,Sports,Going for clg drive ,8.488000000000001,1,1,0
-nishantd445@gmail.com,Nishant dubey ,18.0,Male,Computer engineering ,TY,95.0,8.16,8.4,8.3,8.4,8.75,No,0.0,Semester 1,No,Rarely,Sports,Nothing ,8.402000000000001,0,1,0
-adityadubey65614@gmail.com,Aditya Dubey ,19.0,Male,CS,TY,100.0,9.0,9.0,7.0,8.0,7.0,Yes,1.0,Semester 3,No,Regularly,Cultural events,Gaming ,8.0,1,3,0
-bangerakhushal@gmail.com,Khushal Bangera,19.0,Male,Computer Engineering ,TY,70.26701754385965,9.0,9.2,9.4,9.6,9.8,No,0.0,,Yes,Regularly,Sports,-,9.4,0,3,1
-shaikhamanat71@gmail.com,Amanat,19.0,Male,Computer science ,SY,80.0,7.5,7.3,8.0,8.4,8.75,No,0.0,Semester 2,No,Occasionally,Cultural events,Na,7.99,0,2,0
-prasannapednekar24@gmail.com,Prasanna Pednekar ,20.0,Male,Nsc CS,SY,70.26701754385965,6.27,6.27,8.3,8.4,8.75,Yes,1.0,Semester 3,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars, Social service / NSS",Judo,7.598000000000001,1,3,0
-aarrzoojsr@gmail.com,Aarrzoo ,19.0,Female,Bsc.Data Science ,SY,70.26701754385965,8.17,8.84,8.45,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",Data analysis and fun with code,8.522,0,2,0
-shazebshaikh989@gmail.com,Shazeb Shaikh,18.0,Male,Diploma,TY,100.0,9.0,9.0,9.0,9.0,9.0,Yes,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars, Social service / NSS",crochet,9.0,1,3,0
-ayaansayyed3210@gmail.com,Ayaan Sayyed ,19.0,Male,Diploma ,TY,70.26701754385965,10.0,10.0,10.0,10.0,8.75,Yes,0.0,"Semester 4, None",Yes,Regularly,Academic competitions,Playing carrom ,9.75,1,3,1
-khansohail4218@gmail.com,Khan sohail Abid,18.0,Male,Ce,TY,80.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,Sports,Cricket ,8.402000000000001,0,0,0
-khanathar7977@gmail.com,Khan athar,19.0,Male,Tyif,TY,85.0,7.5,7.5,7.5,7.4,8.5,No,0.0,,Maybe,Regularly,"Cultural events, Sports, Workshops/seminars",Sports,7.68,0,3,1
-meetdubariya2004@gmail.com,Meet Dubariya,21.0,Male,Civil Engineering ,TY,70.26701754385965,8.5,9.0,8.0,7.0,9.0,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars",Cricket ,8.3,0,3,0
-yash662007@gmail.com,Yash Dhekale ,18.0,Male,B tech ,SY,69.0,6.9,7.1,8.1,8.4,8.75,Yes,0.0,"Semester 1, Semester 2",No,Occasionally,"Academic competitions, Sports, Workshops/seminars",Gaming ,7.85,1,2,0
-kaif14573281@gmail.com,Junaid khan ,18.0,Male,Diploma ,TY,70.26701754385965,7.9,8.9,7.8,8.8,7.9,No,0.0,,No,Regularly,Academic competitions,Gym,8.260000000000002,0,3,0
-harshtari5@gmail.com,Harsh Tari,19.0,Male,SE CSE AIML ,SY,70.26701754385965,8.0,8.2,8.3,8.4,10.0,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Coding ,8.58,0,2,0
-ap4769883@gmail.com,Ayush,20.0,Male,Cse aiml,SY,75.0,8.0,8.0,8.0,8.0,8.75,No,0.0,,Yes,Rarely,Cultural events,Gaming,8.15,0,1,1
-satosesaish4@gmail.com,Saish,18.0,Male,It,FY,100.0,9.0,9.0,9.0,9.0,9.0,No,0.0,,No,Rarely,Academic competitions,Guitar,9.0,0,1,0
-deorukhkarhimanshu@gmail.com,Himanshu Deorukhkar ,18.0,Male,I.T,FY,81.0,9.0,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,Sports,Playing game ,8.57,0,2,0
-sunitashukla70093@gmail.com,Suhani mahanaryan shukla ,19.0,Female,Bsc IT ,SY,80.0,6.45,7.4,8.3,8.4,8.75,No,0.0,,No,Never,Cultural events,Dance,7.860000000000001,0,0,0
-ariharann15@gmail.com,Ariharan,19.0,Male,Aircraft maintenance engineer ,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,"Cultural events, Sports, Workshops/seminars",Studies ,8.402000000000001,0,1,0
-azhagumani444@gmail.com,Mani,24.0,Male,Aircraft Maintenance Engineering ,SY,92.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,Yes,Never,,Singing ,8.402000000000001,0,0,1
-shubhammishra1118@gmail.com,Shubham Mishra,21.0,Male,AIML,SY,20.0,6.15,6.13,8.3,8.4,8.75,Yes,0.0,"Semester 1, Semester 2, Semester 3",Yes,Rarely,Social service / NSS,Nothing,7.546000000000001,1,1,1
-8d.swarupparabyhs1@gmail.com,Swarup Parab,18.0,Male,Mechanical ,FY,100.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,Sports,"Cricket, Crafting ",8.402000000000001,0,2,0
-harshyadav5034@gmail.com,HARSH Yadav ,18.0,Male,ECE ,FY,100.0,9.3,8.4,8.3,8.4,8.75,No,0.0,,Maybe,Never,Sports,Cricket ,8.63,0,0,1
-vivekpandey07708@gmail.com,Vivek pandey,17.0,Male,ECE,FY,100.0,8.78,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Sports,Interaction with people to gain knowledge and playing cricket,8.526,0,1,0
-kolekardhruv@gmail.com,Dhruv kolekar,18.0,Male,Me,TY,75.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Sports,"Cricket,vollyball",8.402000000000001,0,1,0
-ramsabadp65@gmail.com,Nitesh Prajapati ,19.0,Male,Electronics and computer engineering ,FY,80.0,8.23,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Sports,Playing cricket and videos game,8.416,0,1,0
-hetansh2612@gmail.com,Hetansh Niraj vyas ,30.0,Male,Computer science ,TY,87.0,8.16,8.4,10.0,9.9,8.9,No,0.0,,No,Rarely,Sports,Chess,9.072,0,1,0
-vy0621186@gmail.com,Taj,26.0,Male,Co,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,Maybe,Never,,Carrom ,8.402000000000001,0,0,1
-shubhamtoraskar8g@gmail.com,Shubham Sanjay Toraskar ,18.0,Male,Computer engineering ,TY,70.26701754385965,9.0,8.2,8.5,9.1,9.3,No,0.0,,No,Occasionally,"Academic competitions, Sports, Workshops/seminars",Table tennis ,8.819999999999999,0,2,0
-vansh.striker@gmail.com,Vijay,19.0,Male,Bat,FY,5.0,8.16,8.4,8.3,8.4,8.75,Yes,0.0,Semester 4,No,Occasionally,,Nothing,8.402000000000001,1,2,0
-atharvhirve1717@gmail.com,Atharva Hirve ,22.0,Male,Sybaf,SY,0.0,8.16,8.4,8.3,8.4,8.75,No,0.0,Semester 4,Yes,Occasionally,Sports,H,8.402000000000001,0,2,1
-jaydeepborgaonkar129@gmail.com,Jaydeep Borgaonkar ,19.0,Male,BSC CS,SY,70.26701754385965,7.6,8.08,8.36,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",,8.238,0,2,0
-dhvanitdoshi043@gmail.com,DHVANIT,21.0,Male,BAF,TY,8.0,9.25,8.8,8.95,7.7,7.98,No,0.0,,No,Rarely,"Academic competitions, Sports",SWIMMING ,8.536000000000001,0,1,0
-collegeimperial310@gmail.com,Mr-Imperial-X,20.0,Male,Bsc DS,TY,56.0,8.9,9.1,9.1,9.2,9.1,No,0.0,,No,Never,Sports,BGMI and Gaming Sessions with friends 🥺,9.08,0,0,0
-manas221205@gmail.com,Manas,20.0,Male,B engineering ,TY,70.0,8.0,8.4,8.5,8.4,8.5,No,0.0,,No,Occasionally,Sports,Football ,8.36,0,2,0
-itsmr.cv1909@gmail.com,chaitanya,20.0,Male,b com,TY,14.0,8.78,8.9,7.85,8.1,7.8,No,0.0,,No,Never,,"art,sports ,workout and cooking",8.286,0,0,0
-khanashfiya352@gmail.com,Khan Ashfiya,20.0,Female,Bms,TY,70.26701754385965,8.5,8.0,8.8,7.9,8.9,No,0.0,,No,Rarely,,Badminton ,8.42,0,1,0
-anshumantripathi74832@gmail.com,Anshuman Tripathi,19.0,Male,IT,SY,70.26701754385965,7.77,8.19,8.0,8.4,8.75,No,0.0,,No,Rarely,Sports,Cricket,8.222,0,1,0
-bm204484@gmail.com,BANTI,19.0,Male,Data Science ,SY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,Yes,0.0,,No,Never,,.,8.402000000000001,1,0,0
-nayansaroj922@gmail.com,Nayan saroj ,20.0,Male,Bscit,TY,79.0,9.1,8.9,8.7,8.3,8.3,No,0.0,,No,Occasionally,"Cultural events, Sports",Football ,8.66,0,2,0
-adarshppathak2007@gmail.com,Adarsh pathak,18.0,Male,Computer engineering ,FY,99.0,7.4,8.4,8.3,8.4,8.75,Yes,2.0,Semester 1,Yes,Occasionally,Cultural events,Cricket ,8.25,1,2,1
-arpitstiwari2007@gmail.com,Karan tiwari ,19.0,Male,Engineering ,FY,90.0,8.1,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports",Volleyball ,8.39,0,3,0
-siddhiadvilkar123@gmail.com,siddhi Advilkar,19.0,Female,Bsc.IT,TY,70.26701754385965,7.8,6.9,6.2,6.5,7.5,No,0.0,,No,Never,,drawing,6.9799999999999995,0,0,0
-guptanilesh028@gmail.com,Nilesh Gupta ,20.0,Male,Computer science ,SY,100.0,7.0,7.0,8.3,8.4,8.75,Yes,1.0,Semester 2,No,Regularly,"Academic competitions, Workshops/seminars, Social service / NSS",Timepass ,7.890000000000001,1,3,0
-shreya.h.singh123@gmail.com,Shreya Singh ,19.0,Female,Microbiology ,SY,75.0,9.18,8.36,7.45,8.22,7.56,No,0.0,,Maybe,Occasionally,Social service / NSS,.,8.154,0,2,1
-aayushk.nambiar@gmail.com,Aayush Nambiar ,18.0,Male,Ds,FY,70.26701754385965,7.91,8.0,8.0,8.0,7.0,No,0.0,,No,Rarely,Sports,Sports ,7.781999999999999,0,1,0
-nadarroshni90@gmail.com,Roshni Nadar ,20.0,Female,TYIT,TY,70.26701754385965,6.4,6.0,5.4,5.7,6.4,No,0.0,Semester 4,No,Occasionally,Academic competitions,Sketching ,5.9799999999999995,0,2,0
-kamlasajanlalgupta@gmail.com,Laxmi Gupta ,20.0,Female,Microbiology ,SY,70.26701754385965,9.0,9.0,9.0,8.4,8.75,No,0.0,,No,Occasionally,Social service / NSS,...,8.83,0,2,0
-adityanarwade101@gmail.com,Aditya Narwade ,20.0,Male,Data science ,TY,75.0,8.0,8.0,8.0,8.0,8.0,No,0.0,Semester 3,No,Regularly,"Cultural events, Sports, Workshops/seminars, Social service / NSS",Productive working ,8.0,0,3,0
-pjha77212@gmail.com,prince jha,19.0,Male,bscit ,SY,90.0,8.0,8.5,7.8,8.4,8.75,Yes,3.0,"Semester 1, Semester 2, Semester 3",No,Never,Sports,playing cricket ,8.290000000000001,1,0,0
-anujkumaryadav6388@gmail.com,Anuj kumar,20.0,Male,BSCIT,SY,100.0,10.0,10.0,10.0,10.0,10.0,No,0.0,,No,Never,Academic competitions,Photographer ,10.0,0,0,0
-abhishekkanojia913@gmail.com,Abhishek kanojiya,20.0,Male,Bscit,SY,75.0,8.16,8.4,7.4,8.4,8.75,Yes,3.0,"Semester 1, Semester 2",Maybe,Rarely,Sports,Football and cricket,8.222,1,1,1
-pankajkanojiya5172@gmail.com,Pankaj Kanojiya ,19.0,Male,BSC-IT,SY,75.0,8.0,8.0,8.3,8.4,8.75,Yes,4.0,"Semester 3, Semester 4",Maybe,Occasionally,Sports,Playing boxing ,8.290000000000001,1,2,1
-nitinhridayshukla@gmail.com,Nitin shukla ,19.0,Male,Bsc IT,TY,89.0,5.2,6.4,7.3,8.2,9.2,No,0.0,,No,Never,"Cultural events, Workshops/seminars",Cricket ,7.26,0,0,0
-hrushikeshsangaleviiih@gmail.com,Hrushikesh ,19.0,Male,CSE AIML ,FY,90.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Sports,8.402000000000001,0,2,0
-simransinghr928@gmail.com,Simran singh,20.0,Female,Microbiology ,TY,70.26701754385965,7.0,6.0,8.3,6.0,8.75,No,0.0,Semester 5,No,Never,Cultural events,"Dance is more than just a hobby; it is a powerful form of self-expression that allows a person to communicate emotions without speaking a single word. When someone dances, they are not just moving their body to music, but telling a story through rhythm, expressions, and energy. Each step, turn, and gesture reflects feelings that sometimes cannot be explained in words. Whether the music is slow and emotional or fast and energetic, dance becomes a beautiful way to release stress, express happiness, and even heal from difficult moments. It creates a space where a person can truly be themselves, free from judgment, and completely connected to the present moment.  Beyond emotional expression, dance also plays a significant role in physical and mental well-being. Regular dancing improves flexibility, balance, coordination, and stamina. It strengthens muscles and enhances posture, making the body feel more active and confident. At the same time, it boosts mental health by reducing anxiety and increasing positive energy. When you practice dance consistently, you develop discipline, focus, and determination. Learning new steps requires patience and repetition, and performing in front of others builds confidence and courage. Over time, dance shapes not only the body but also the personality.  Dance also connects people culturally and socially. Different forms of dance represent different traditions, histories, and communities. Classical dances preserve heritage and storytelling, while modern styles reflect creativity and evolving trends. Through dance, people can connect with others who share the same passion, creating friendships and a sense of belonging. Whether performed on a stage, at a celebration, or simply in a room alone with music playing, dance brings joy and freedom. It transforms ordinary moments into memorable ones and turns music into movement that feels alive.",7.209999999999999,0,0,0
-bhaveshdalvi1210@gmail.com,Bhavesh Prakash Dalvi,20.0,Male,Data Science,TY,80.0,9.5,10.0,8.7,9.1,9.1,No,0.0,,No,Rarely,"Sports, Workshops/seminars","Chess,Karate",9.28,0,1,0
-bhaveshpdalvi@gmail.com,Bhavesh ,20.0,Male,Data Science,TY,60.0,8.7,9.0,8.5,8.2,8.6,No,0.0,,No,Rarely,"Sports, Workshops/seminars","Chess,Karate",8.6,0,1,0
-yashupal2004@gmail.com,John cena,19.0,Male,Wwe,TY,70.26701754385965,10.0,10.0,10.0,10.0,10.0,No,0.0,,No,Regularly,Sports,Not to come to the college daily and sleep peacefully ,10.0,0,3,0
-singhpalaks0908@gmail.com,Palak Singh ,20.0,Female,TYDS ,TY,70.26701754385965,8.16,9.7,7.7,8.7,9.4,No,0.0,,No,Occasionally,"Cultural events, Sports",Sleeping,8.732,0,2,0
-bindu.gulati.72@gmail.com,Bindu ,21.0,Female,DS,SY,76.0,8.7,9.5,7.3,8.4,8.75,No,0.0,,No,Never,,Carrom,8.53,0,0,0
-suru93497@gmail.com,Sneha Pandey ,19.0,Female,BA,TY,90.0,9.0,9.16,9.32,9.38,9.16,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars","Reading, walking and editing ",9.203999999999999,0,3,0
-bindugulati4@gmail.com,Raj Shamani,21.0,Male,Computer Science,TY,89.0,6.7,7.6,8.9,9.4,10.0,No,0.0,,Yes,Rarely,Sports,Basketball,8.52,0,1,1
-monishgulati24@gmail.com,Monish Gulati,20.0,Male,Bsc Data Science,TY,75.0,8.2,7.3,9.5,6.5,0.0,Yes,4.0,Semester 5,No,Rarely,Sports,Yoga,6.3,1,1,0
-tsapid.02201944@gmail.com,Varun Kumar,21.0,Male,Bsc IT,TY,65.0,7.6,8.4,9.2,6.9,0.0,Yes,1.0,Semester 4,Yes,Regularly,"Academic competitions, Cultural events",Singing,6.42,1,3,1
-gulatimonish@gmail.com,Tushar Gulati,20.0,Male,Bsc Computer Science,TY,88.0,9.5,8.6,7.1,10.0,0.0,No,0.0,,Maybe,Rarely,Sports,Basketball,7.040000000000001,0,1,1
-yashtelang2005@gmail.com,yash telang ,20.0,Male,tyba,TY,90.0,8.6,9.0,8.9,9.4,9.6,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",working out ,9.1,0,2,0
-prafulsharma1107@gmail.com,Prafulkumar Ravindra Sharma ,20.0,Male,Bachelor in Political Science ,TY,93.0,8.82,9.0,9.18,9.27,10.0,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars","Reading, Binge Watching, Calligraphy ",9.254,0,3,0
-mahising0620@gmail.com,Mahi  Singh ,19.0,Female,Data science ,SY,83.0,6.78,7.52,7.94,8.4,8.75,No,0.0,Semester 1,No,Occasionally,"Cultural events, Sports, Workshops/seminars","Dance , cooking ",7.878,0,2,0
-nandiniisingh09@gmail.com,Nandini singh,19.0,Female,be,FY,90.0,8.4,8.4,8.3,8.4,8.75,No,0.0,,No,Never,,none,8.45,0,0,0
-thakur998767@gmail.com,Himanshu,25.0,Male,Data science ,TY,0.0,9.4,9.0,8.0,9.1,8.0,No,0.0,,No,Rarely,,scrolling ,8.7,0,1,0
-peterlobo2005@gmail.com,Peter lobo,20.0,Male,Bsc IT,TY,70.26701754385965,8.9,9.0,9.9,10.0,9.6,No,0.0,,Maybe,Never,,Volleyball ,9.48,0,0,1
+Email Address,name,age,gender,course,year,attendance,gpa_sem1,gpa_sem2,gpa_sem3,gpa_sem4,gpa_sem5,backlog_status,backlog_count,In which semesters did you have backlogs?,dropout_thought,event_participation,What type of college activities do you usually participate in?,What is your favorite activity or hobby?,avg_gpa,has_backlog,event_score,risk_score,dropout_risk
+karanthakur809761@gmail.com,Karan Thakur ,20.0,Male,Bsc Data science ,TY,70.0,7.8,8.7,6.8,6.7,8.2,No,0.0,Semester 3,No,Rarely,,Football,7.640000000000001,0,1,1,0
+prabhatqrsyadav@gmail.com,Prabhat yadav,19.0,Male,Data science ,SY,70.26701754385965,7.2,7.1,7.5,8.4,8.75,No,0.0,,Yes,Occasionally,"Academic competitions, Cultural events, Sports",Football ,7.790000000000001,0,2,0,0
+sharmaadityaa1755@gmail.com,ADITYA RAJESH SHARMA ,20.0,Male,BSC DATA SCIENCE ,TY,70.26701754385965,9.0,9.5,8.3,8.3,9.0,No,0.0,,No,Rarely,"Sports, Workshops/seminars",My favorite hobby is learning new technologies and working on data-related projects.  Or hobby is  playing sports ,8.82,0,1,1,0
+koreadarsh569@gmail.com,Adarsh Sadashiv Kore ,20.0,Male,20,TY,69.0,9.2,9.8,9.2,9.6,9.2,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars","Cycling, Swimming, Reading, Travelling, Listening Songs ",9.4,0,3,1,0
+santoshyadav7021646181@gmail.com,Santosh Yadav ,20.0,Male,Data science ,TY,100.0,9.9,9.9,9.9,9.9,9.9,No,0.0,,No,Occasionally,Sports,To take holidays from college ,9.9,0,2,0,0
+vedantg987@gmail.com,Vedant gupta ,21.0,Male,Bsc it,TY,80.0,7.8,7.1,7.9,7.9,7.8,Yes,3.0,"Semester 1, Semester 3",No,Rarely,Sports,Volleyball ,7.699999999999998,1,1,2,1
+hussainshaikh30hs@gmail.com,Hussain shaikh ,21.0,Male,Bsc data science ,TY,50.0,8.0,7.0,7.0,8.4,8.75,Yes,2.0,"Semester 3, Semester 4",No,Occasionally,Cultural events,Writing poem shayari etc,7.83,1,2,2,1
+umanggupta1832006@gmail.com,Umang gupta ,20.0,Male,BSC IT ,TY,80.0,7.2,7.2,7.5,8.5,8.2,No,0.0,Semester 1,No,Rarely,Cultural events,Animation ,7.719999999999999,0,1,1,0
+saurabhyadav7039346896@gmail.com,Saurabh Sanjay Yadav ,20.0,Male,Bsc Data science ,TY,70.26701754385965,8.5,9.4,8.6,9.1,8.8,Yes,1.0,Semester 3,No,Rarely,Workshops/seminars,"Reading books, cricket and coding ",8.88,1,1,2,1
+malharmane595611@gmail.com,Malhar Mane,22.0,Male,Digital Marketing ,TY,70.26701754385965,8.9,8.9,9.5,9.2,9.8,No,0.0,,No,Rarely,Sports,Gym and Reading ,9.26,0,1,1,0
+chiragmishra1305@gmail.com,Chirag mishra,19.0,Male,Data science,TY,50.0,8.5,8.6,7.0,7.1,8.5,No,0.0,,No,Rarely,Sports, sports ,7.94,0,1,2,1
+wadiarudra82@gmail.com,Rudra,20.0,Male,Bfm,TY,77.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Cultural events,Music,8.402000000000001,0,1,1,0
+singhsarvtej@gmail.com,Sarvtej Singh Bomrha ,20.0,Male,Bcom,TY,78.0,7.0,6.0,8.0,8.0,8.0,Yes,2.0,Semester 2,Yes,Regularly,"Academic competitions, Cultural events",Stand up comedy ,7.4,1,3,1,0
+divyavaranjani160803@gmail.com,Divya Varanjani ,22.0,Female,MBA ,SY,80.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,,Book reading ,8.402000000000001,0,0,1,0
+gavincardoz1701@gmail.com,Gavin,24.0,Male,Data science ,TY,70.26701754385965,8.0,8.0,9.0,9.5,10.0,No,0.0,,Yes,Never,,Sleeping,8.9,0,0,1,0
+shraddhapandey0606@gmail.com,Shraddha pandey,21.0,Female,Bsc botany ,TY,70.0,9.1,9.0,8.5,9.0,8.9,No,0.0,,No,Occasionally,Cultural events,Travelling ,8.9,0,2,0,0
+kanishkwagh69@gmail.com,Kanishk,20.0,Male,Data Science ,TY,70.26701754385965,9.1,8.9,6.8,6.1,9.3,No,0.0,,Maybe,Rarely,Cultural events,Trekking,8.040000000000001,0,1,1,0
+nehemiahkollabathula77@gmail.com,Nehemiah K,19.0,Male,Data Science,TY,10.0,8.2,8.9,8.0,8.8,8.9,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Studying new technologies ,8.56,0,2,1,0
+rangeelachoudhary2403@gmail.com,Rangeela choudhary,21.0,Female,Data sciences ,TY,60.0,8.9,9.8,7.5,8.5,9.0,No,0.0,,Maybe,Occasionally,"Academic competitions, Workshops/seminars",Badminton ,8.74,0,2,1,0
+rachitkhare296@gmail.com,Rachit Khare ,20.0,Male,B pharm ,SY,70.26701754385965,6.9,6.8,8.3,8.4,8.75,No,0.0,,Maybe,Rarely,,Kite flying ,7.83,0,1,1,0
+aryanrathoreop@gmail.com,Aryan Rathore ,20.0,Male,Information Technology,TY,76.0,7.77,7.56,8.08,8.18,9.59,No,0.0,,No,Rarely,Cultural events,Coding,8.235999999999999,0,1,1,0
+pandeysneha803@gmail.com,Sneha Pandey ,19.0,Female,TYBA,TY,90.0,8.16,8.4,9.32,9.16,9.16,No,0.0,,No,Occasionally,"Academic competitions, Cultural events, Workshops/seminars",Reading ,8.84,0,2,0,0
+rasrassawant@gmail.com,Rasika Abhijit Sawant ,20.0,Female,BA,TY,70.26701754385965,7.91,7.86,8.3,7.98,7.78,No,0.0,,No,Regularly,Academic competitions,Dance and reading ,7.965999999999999,0,3,0,0
+simransihan099@gmail.com,Simran Sihan ,20.0,Female,Bsc DS,TY,80.0,9.3,9.9,7.7,8.9,8.7,No,0.0,,No,Regularly,"Academic competitions, Sports, Workshops/seminars, Social service / NSS",Reading ,8.9,0,3,0,0
+gandhikrish838@gmail.com,Krish Gandhi,20.0,Male,BAMMC,TY,70.26701754385965,7.0,7.9,8.8,8.7,8.3,No,0.0,,No,Never,,none,8.14,0,0,1,0
+diwansrd@gmail.com,Sandeep Diwan ,20.0,Male,Data science ,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Social service / NSS",To meditate & stay consistent is my hobby.,8.402000000000001,0,3,0,0
+mathiasryan270405@gmail.com,Ryan Mathias ,20.0,Male,Bachelor of Management Studies ,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars",Listening to Music ,8.402000000000001,0,3,0,0
+eshaan.singh0812@gmail.com,ESHAAN SINGH,20.0,Male,BAF,SY,54.0,7.16,9.0,9.13,8.4,8.75,Yes,1.0,Semester 1,No,Never,Sports,CAR PHOTOGRAPHY ,8.488,1,0,3,1
+ajithnaidu097@gmail.com,Ajith Sampath Naidu,19.0,Male,Bsc Data Science ,TY,70.26701754385965,7.8,9.2,8.8,7.4,8.7,No,0.0,Semester 3,No,Occasionally,Sports,Going to Gym,8.38,0,2,0,0
+singhsarvtej@gmail.com,Sarvtej Singh ,20.0,Male,Bcom ,TY,78.0,7.0,7.0,8.0,8.0,8.0,No,0.0,,Yes,Regularly,"Academic competitions, Cultural events, Sports",Poetry ,7.6,0,3,0,0
+killeryt18102005@gmail.com,Eshaan solanki ,20.0,Male,Bcom,TY,0.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,,,8.402000000000001,0,0,2,1
+nirmalab1508@gmail.com,Nirmala bhandare ,25.0,Female,Interior designing,FY,70.0,7.6,8.8,9.3,8.9,7.6,No,0.0,,Yes,Regularly,,Music,8.440000000000001,0,3,0,0
+bhandariaryan1511@gmail.com,Aryan Bhandari ,20.0,Male,Computer Engineer ,TY,78.0,7.0,8.0,6.0,7.0,8.75,No,0.0,,No,Never,Academic competitions,Playing Cricket,7.35,0,0,1,0
+gurkiratkhatoroda@gmail.com,Gurvinder Pal Singh Khatoroda,20.0,Male,BE. IT,TY,70.26701754385965,9.5,8.14,8.36,8.64,9.36,No,0.0,,Maybe,Rarely,Academic competitions,Hanging out with friends,8.8,0,1,1,0
+kashafshah665@gmail.com,kashaf shah,20.0,Female,data science,TY,70.26701754385965,9.2,9.8,8.8,8.6,9.4,No,0.0,,No,Rarely,"Cultural events, Sports","doing nothing , relaxing ",9.16,0,1,1,0
+yadavvishal20067@gmail.com,Vishal Yadav,19.0,Male,Bachelor of Pharmacy,SY,70.26701754385965,6.85,8.4,8.3,8.4,8.75,Yes,1.0,Semester 2,No,Occasionally,"Cultural events, Sports, Social service / NSS",Volleyball and E-Sport,8.14,1,2,1,0
+anishsawant0721@gmail.com,Anish Sadashiv Sawant ,19.0,Male,Computer Engineering ,TY,80.0,8.5,8.35,8.7,8.25,8.75,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Cricket ,8.51,0,2,0,0
+alfahadmalik00@gmail.com,Alfahad Malik,21.0,Male,Computer engineering ,TY,80.0,6.9,7.2,8.5,9.2,8.75,No,0.0,,No,Rarely,Social service / NSS,Playing outdoor games ,8.11,0,1,1,0
+karansunilrathod@gmail.com,Karan Rathod ,20.0,Male,Data Science ,TY,69.0,7.4,8.1,7.0,6.2,8.75,Yes,3.0,Semester 3,Maybe,Occasionally,"Sports, Workshops/seminars","Chess, Cricket ",7.49,1,2,2,1
+umesh.yadav6623@gmail.com,Umesh Yadav ,20.0,Male,Data science ,TY,71.0,8.5,9.0,8.8,8.8,9.2,Yes,1.0,Semester 4,No,Never,,Sleeping ,8.86,1,0,2,1
+rudvegmat@gmail.com,Rudveg Matwankar ,20.0,Male,Data Science ,TY,70.0,9.4,9.8,9.0,9.5,9.5,No,0.0,,No,Regularly,"Academic competitions, Sports, Workshops/seminars","Exploring Music, reading ",9.440000000000001,0,3,0,0
+upadhyaynaitik63@gmail.com,Naitik Upadhyay ,21.0,Male,Data science ,TY,70.26701754385965,7.8,9.2,6.8,7.9,8.3,Yes,1.0,Semester 4,No,Regularly,Workshops/seminars,Cricket ,8.0,1,3,1,0
+avinashchauhan21a@gmail.com,Avinash Chauhan ,20.0,Male,Data science ,TY,60.0,9.2,9.5,8.5,9.5,8.7,No,0.0,,No,Occasionally,Sports,Sports ,9.080000000000002,0,2,1,0
+jaisneeraj2005@gmail.com,Neeraj Kharbhan Jaiswar ,20.0,Male,Data science ,TY,55.84,7.5,8.5,7.3,7.3,8.7,No,0.0,,No,Rarely,"Sports, Workshops/seminars",Hwiwwishsb,7.859999999999999,0,1,2,1
+singhriddhi398@gmail.com,Riddhi Dhananjay Singh ,19.0,Female,Data Science ,TY,70.26701754385965,8.4,8.8,6.9,7.3,9.2,No,0.0,,No,Rarely,Workshops/seminars,Dance ,8.120000000000001,0,1,1,0
+sandeepmahto1881@gmail.com,Sandeep Dhruv Mahto ,21.0,Male,Ds,TY,70.26701754385965,8.8,9.2,8.5,8.4,9.0,No,0.0,,No,Never,Sports,Cricket ,8.78,0,0,1,0
+dsouzachris220805@gmail.com,Chris Dsouza,20.0,Male,Bcom,TY,70.26701754385965,5.0,5.0,5.0,5.0,5.0,Yes,5.0,"Semester 1, Semester 2, Semester 3, Semester 4",No,Regularly,"Cultural events, Sports, Social service / NSS",coverage,5.0,1,3,2,1
+angadg720@gmail.com,Angad Gupta ,19.0,Male,Information technology ,TY,60.0,6.3,6.5,7.0,6.8,6.0,Yes,0.0,,No,Rarely,Social service / NSS,Ridding ,6.5200000000000005,1,1,2,1
+sarwadeepmedhe45@gmail.com,Sarwadeep,20.0,Male,Data science,TY,55.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,"Academic competitions, Sports, Workshops/seminars",Maze,8.402000000000001,0,1,2,1
+vnkatpara@gmail.com,Vivek Naresh Katpara,20.0,Male,Data science,TY,44.0,9.2,9.6,8.4,9.2,8.7,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",I love to participate in hackathons and other technical events,9.02,0,2,1,0
+ogalesarthak44@gmail.com,Sarthak Ogale ,22.0,Male,B.Sc. CS,TY,65.0,8.16,8.4,8.3,8.4,8.75,Yes,0.0,"Semester 2, Semester 3",No,Occasionally,"Academic competitions, Workshops/seminars",Martial Arts and Physical fitness related activities ,8.402000000000001,1,2,1,0
+zakirsheikh534@gmail.com,Zakir shaikh,19.0,Male,Computer science ,TY,40.0,6.0,6.3,6.7,8.4,8.75,Yes,2.0,"Semester 4, Semester 5",No,Regularly,Sports,Sports ,7.2299999999999995,1,3,2,1
+ladsanhil700@gmail.com,Sanhil lad,20.0,Male,Computer Science ,TY,70.26701754385965,8.0,7.65,9.1,8.45,8.95,No,0.0,,No,Never,Academic competitions,"Reading,  listening  music",8.430000000000001,0,0,1,0
+rachit22805@gmail.com,Rachit Piwlatkar,20.0,Male,BSC CS,TY,91.0,9.3,9.6,10.0,9.8,8.25,No,0.0,,No,Never,,"Playing games, Reading book, Listening to music",9.39,0,0,1,0
+vipulmanojgupta1994@gmail.com,Vipul gupta ,20.0,Male,Bsc cs ,SY,50.0,6.5,6.5,6.5,8.4,8.75,Yes,2.0,"Semester 2, Semester 3",Maybe,Regularly,Cultural events,Carrom ,7.33,1,3,2,1
+gaurangtiwari22@gmail.com,Gaurang Tiwari,21.0,Male,BSC IT,TY,80.0,8.5,7.5,7.5,8.5,8.7,Yes,1.0,Semester 3,No,Never,,,8.14,1,0,2,1
+3277aryanthesia@gmail.com,Aryan thesia,20.0,Male,Bsc It,TY,80.0,8.52,7.52,6.7,7.3,6.8,No,0.0,,No,Rarely,Cultural events,Cricket,7.367999999999999,0,1,1,0
+10f.tusharkashyap@gmail.com,Tushar kashyap ,20.0,Male,Ds,TY,50.0,8.0,9.5,8.0,7.5,9.2,No,0.0,,Maybe,Rarely,Sports,Combatsports,8.440000000000001,0,1,2,1
+rm2380132@gmail.com,Rohit Maurya ,21.0,Male,Data science ,TY,70.26701754385965,8.16,8.4,10.0,9.9,9.8,No,0.0,,Maybe,Never,Sports,"Carrom, cricket, badminton, ",9.252,0,0,1,0
+sandeepmahto1881@gmail.com,Sandeep Mahto ,21.0,Male,Data science ,TY,99.0,8.2,9.4,8.6,8.2,9.0,No,0.0,,Maybe,Never,,Sport,8.680000000000001,0,0,1,0
+riteshnaik5664@gmail.com,Ritesh naik ,21.0,Male,Data science ,TY,90.0,9.0,9.0,9.0,9.0,9.0,Yes,0.0,,Maybe,Regularly,"Academic competitions, Cultural events, Workshops/seminars, Social service / NSS",Na,9.0,1,3,0,0
+amrutamore567@gmail.com,Amruta namdeo more,21.0,Female,Bsc data science ,TY,75.0,9.8,10.0,9.5,9.5,9.5,No,0.0,,No,Occasionally,"Academic competitions, Cultural events, Sports, Workshops/seminars, Social service / NSS",Dancing ,9.66,0,2,0,0
+yashpokle1234@gmail.com,Yash pokle,20.0,Male,Ds,TY,50.0,8.9,7.2,9.1,7.2,8.8,No,0.0,,No,Regularly,Cultural events,Music,8.24,0,3,1,0
+mr0069558@gmail.com,Roman rings ,22.0,Male,Bsc.Data science ,TY,69.0,8.4,8.2,7.1,6.1,7.2,No,0.0,,No,Rarely,"Sports, Workshops/seminars",Sports ,7.400000000000001,0,1,2,1
+parkbryce25@gmail.com,Bryce park ,19.0,Male,AME ,FY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Sports",Cycling and bodybuilding ,8.402000000000001,0,3,0,0
+navleaditya69@gmail.com,Aditya Ashok Navle ,18.0,Male,Aircraft maintenance engineering ,FY,95.0,9.8,9.5,9.9,9.9,9.7,No,0.0,,Yes,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars",Drawing,9.76,0,3,0,0
+suvarnabaile35@gmail.com,Deepanshu Dipak Baile ,19.0,Male,Bsc aeronautics ,FY,99.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,"Academic competitions, Cultural events, Sports, Workshops/seminars",Racing ,8.402000000000001,0,0,1,0
+shaharya2006@gmail.com,Arya Shah,19.0,Male,bms-sy,SY,68.0,7.18,8.18,8.5,8.4,8.75,No,0.0,,Maybe,Occasionally,,"gaming,series,music,sleeping",8.202,0,2,1,0
+asifansari929487@gmail.com,Mohammad Asif Ansari ,19.0,Male,BMS,SY,70.26701754385965,6.9,7.09,7.5,8.0,8.5,No,0.0,,No,Never,Sports,No,7.598000000000001,0,0,1,0
+thakurrishi96197@gmail.com,Rishikesh Bipin Thakur ,19.0,Male,BMS,SY,70.26701754385965,6.79,7.73,8.27,8.4,8.75,Yes,2.0,Semester 1,Maybe,Rarely,,Playing online games ,7.9879999999999995,1,1,2,1
+sy2268768@gmail.com,Shubham yadav ,19.0,Male,BMS,SY,89.0,8.0,8.9,8.35,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Cultural events, Sports",Sports ,8.48,0,2,0,0
+atharvathakur87627@gmail.com,Atharva Dinesh Thakur,20.0,Male,Bsc IT,TY,20.0,5.68,6.9,5.5,7.0,6.5,Yes,3.0,"Semester 2, Semester 3, Semester 4",No,Never,,Cricket,6.316,1,0,4,1
+yashvishwakarma012@gmail.com,YV,20.0,Male,cs,SY,70.26701754385965,8.1,8.56,8.91,8.4,8.75,No,0.0,,Maybe,Occasionally,Sports,chess,8.544,0,2,0,0
+yuvrajmatondkar@gmail.com,Yuvraj Matondkar,19.0,Male,Tyce Polytechnic ,TY,70.26701754385965,8.0,8.2,7.4,8.5,8.6,No,0.0,,No,Occasionally,Sports,sleeping,8.14,0,2,0,0
+annu.a.sharma932@gmail.com,Annu sharma ,18.0,Female,Microbiology ,FY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars, Social service / NSS",Research ,8.402000000000001,0,2,0,0
+pawamsahu2000@gmail.com,Pawan sahu,20.0,Male,BSc (IT),TY,60.0,6.9,6.9,7.4,8.4,7.2,Yes,0.0,Semester 1,No,Rarely,"Academic competitions, Workshops/seminars",Playing Cricket,7.360000000000001,1,1,2,1
+suryaaa.211817@gmail.com,Surya mahesh poonusamy,19.0,Male,baf,FY,100.0,8.45,9.42,8.42,8.0,7.52,No,0.0,,No,Regularly,"Cultural events, Sports",Sports day,8.362,0,3,0,0
+adityakahar61@gmail.com,Aryan kahar,19.0,Male,Bsc cs ,SY,2.0,8.16,8.4,8.3,8.4,8.75,Yes,1.0,"Semester 1, Semester 3",Yes,Rarely,,Filing this form 😊,8.402000000000001,1,1,3,1
+singhsidhant727@gmail.com,Sidhant singh ,20.0,Male,Bsc it,SY,30.0,6.0,7.0,8.3,8.4,8.75,No,0.0,Semester 3,Maybe,Occasionally,Academic competitions,Reading ,7.69,0,2,1,0
+deevmadhani@gmail.com,Manav Sharma ,20.0,Female,Co,SY,20.0,8.16,8.4,8.3,8.4,8.75,Yes,10.0,"Semester 1, Semester 2, Semester 3, Semester 4, Semester 5, None",Yes,Never,"Academic competitions, Cultural events, Sports, Workshops/seminars, Social service / NSS, None",Seeing reels on Instagram ,8.402000000000001,1,0,3,1
+bhogleneel@gmail.com,Neel Bhogle ,19.0,Male,Mechanical engineering ,SY,59.0,8.16,8.4,8.3,8.4,8.75,Yes,2.0,"Semester 1, Semester 3",Maybe,Regularly,"Academic competitions, Cultural events, Workshops/seminars",Engineering /design /music,8.402000000000001,1,3,2,1
+aryanganji18@gmail.com,aryan,20.0,Male,Bms,TY,75.0,9.0,6.0,7.0,8.0,9.0,No,0.0,,Maybe,Never,Sports,.,7.8,0,0,1,0
+divyanshyadav1864@gmail.com,Divyansh ,20.0,Male,Bms,TY,0.0,5.0,5.0,5.0,6.0,7.0,Yes,8.0,"Semester 3, Semester 4, Semester 5",Yes,Occasionally,Sports,Chhinaragiri,5.6,1,2,3,1
+abhishekrkashyap2005@gmail.com,Abhishek kashyap ,20.0,Male,Bms,TY,89.0,7.0,8.1,8.3,8.4,8.3,No,10.0,Semester 5,No,Rarely,Social service / NSS,Drawing ,8.02,0,1,2,1
+tiwariankush355@gmail.com,Ankush ,20.0,Male,Bms ,TY,80.0,5.0,5.8,7.3,8.7,8.75,No,0.0,,No,Occasionally,"Cultural events, Sports",  cricket ,7.109999999999999,0,2,0,0
+tripathisiddhant2006@gmail.com,Siddhant Tripathi ,19.0,Male,IT,SY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,Yes,2.0,"Semester 2, Semester 3",No,Rarely,"Sports, None",To play cricket ,8.402000000000001,1,1,2,1
+rathodneel116@gmail.com, Sarthak manav shah,20.0,Female,Civil Engineering ,SY,70.26701754385965,8.16,8.4,8.3,8.4,0.0,No,0.0,,Maybe,Rarely,"Academic competitions, Cultural events, Workshops/seminars, Social service / NSS, None",Eat and sleep dont come to school,6.652000000000001,0,1,1,0
+faizanpadiyar328@gmail.com,MOHAMMAD FAIZAN ,18.0,Male,TYCO,TY,87.6,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,Sports,Cricket ,8.402000000000001,0,0,1,0
+sarita1980.pandey@gmail.com,Tridev Rameshchandra Pandey ,17.1,Male,Bsc.it,FY,70.26701754385965,8.18,8.4,8.3,8.4,8.75,No,0.0,,Yes,Rarely,"Workshops/seminars, Social service / NSS","Reading books , painting.",8.406,0,1,1,0
+buntyboi1432@gmail.com,Vineet Chauhan ,19.0,Male,Cs,FY,85.0,8.59,8.4,8.3,8.4,8.75,Yes,1.0,Semester 1,No,Rarely,Sports,Going for clg drive ,8.488000000000001,1,1,2,1
+nishantd445@gmail.com,Nishant dubey ,18.0,Male,Computer engineering ,TY,95.0,8.16,8.4,8.3,8.4,8.75,No,0.0,Semester 1,No,Rarely,Sports,Nothing ,8.402000000000001,0,1,1,0
+adityadubey65614@gmail.com,Aditya Dubey ,19.0,Male,CS,TY,100.0,9.0,9.0,7.0,8.0,7.0,Yes,1.0,Semester 3,No,Regularly,Cultural events,Gaming ,8.0,1,3,1,0
+bangerakhushal@gmail.com,Khushal Bangera,19.0,Male,Computer Engineering ,TY,70.26701754385965,9.0,9.2,9.4,9.6,9.8,No,0.0,,Yes,Regularly,Sports,-,9.4,0,3,0,0
+shaikhamanat71@gmail.com,Amanat,19.0,Male,Computer science ,SY,80.0,7.5,7.3,8.0,8.4,8.75,No,0.0,Semester 2,No,Occasionally,Cultural events,Na,7.99,0,2,0,0
+prasannapednekar24@gmail.com,Prasanna Pednekar ,20.0,Male,Nsc CS,SY,70.26701754385965,6.27,6.27,8.3,8.4,8.75,Yes,1.0,Semester 3,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars, Social service / NSS",Judo,7.598000000000001,1,3,1,0
+aarrzoojsr@gmail.com,Aarrzoo ,19.0,Female,Bsc.Data Science ,SY,70.26701754385965,8.17,8.84,8.45,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",Data analysis and fun with code,8.522,0,2,0,0
+shazebshaikh989@gmail.com,Shazeb Shaikh,18.0,Male,Diploma,TY,100.0,9.0,9.0,9.0,9.0,9.0,Yes,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars, Social service / NSS",crochet,9.0,1,3,0,0
+ayaansayyed3210@gmail.com,Ayaan Sayyed ,19.0,Male,Diploma ,TY,70.26701754385965,10.0,10.0,10.0,10.0,8.75,Yes,0.0,"Semester 4, None",Yes,Regularly,Academic competitions,Playing carrom ,9.75,1,3,0,0
+khansohail4218@gmail.com,Khan sohail Abid,18.0,Male,Ce,TY,80.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Never,Sports,Cricket ,8.402000000000001,0,0,1,0
+khanathar7977@gmail.com,Khan athar,19.0,Male,Tyif,TY,85.0,7.5,7.5,7.5,7.4,8.5,No,0.0,,Maybe,Regularly,"Cultural events, Sports, Workshops/seminars",Sports,7.68,0,3,0,0
+meetdubariya2004@gmail.com,Meet Dubariya,21.0,Male,Civil Engineering ,TY,70.26701754385965,8.5,9.0,8.0,7.0,9.0,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports, Workshops/seminars",Cricket ,8.3,0,3,0,0
+yash662007@gmail.com,Yash Dhekale ,18.0,Male,B tech ,SY,69.0,6.9,7.1,8.1,8.4,8.75,Yes,0.0,"Semester 1, Semester 2",No,Occasionally,"Academic competitions, Sports, Workshops/seminars",Gaming ,7.85,1,2,1,0
+kaif14573281@gmail.com,Junaid khan ,18.0,Male,Diploma ,TY,70.26701754385965,7.9,8.9,7.8,8.8,7.9,No,0.0,,No,Regularly,Academic competitions,Gym,8.260000000000002,0,3,0,0
+harshtari5@gmail.com,Harsh Tari,19.0,Male,SE CSE AIML ,SY,70.26701754385965,8.0,8.2,8.3,8.4,10.0,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Coding ,8.58,0,2,0,0
+ap4769883@gmail.com,Ayush,20.0,Male,Cse aiml,SY,75.0,8.0,8.0,8.0,8.0,8.75,No,0.0,,Yes,Rarely,Cultural events,Gaming,8.15,0,1,1,0
+satosesaish4@gmail.com,Saish,18.0,Male,It,FY,100.0,9.0,9.0,9.0,9.0,9.0,No,0.0,,No,Rarely,Academic competitions,Guitar,9.0,0,1,1,0
+deorukhkarhimanshu@gmail.com,Himanshu Deorukhkar ,18.0,Male,I.T,FY,81.0,9.0,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,Sports,Playing game ,8.57,0,2,0,0
+sunitashukla70093@gmail.com,Suhani mahanaryan shukla ,19.0,Female,Bsc IT ,SY,80.0,6.45,7.4,8.3,8.4,8.75,No,0.0,,No,Never,Cultural events,Dance,7.860000000000001,0,0,1,0
+ariharann15@gmail.com,Ariharan,19.0,Male,Aircraft maintenance engineer ,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,"Cultural events, Sports, Workshops/seminars",Studies ,8.402000000000001,0,1,1,0
+azhagumani444@gmail.com,Mani,24.0,Male,Aircraft Maintenance Engineering ,SY,92.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,Yes,Never,,Singing ,8.402000000000001,0,0,1,0
+shubhammishra1118@gmail.com,Shubham Mishra,21.0,Male,AIML,SY,20.0,6.15,6.13,8.3,8.4,8.75,Yes,0.0,"Semester 1, Semester 2, Semester 3",Yes,Rarely,Social service / NSS,Nothing,7.546000000000001,1,1,2,1
+8d.swarupparabyhs1@gmail.com,Swarup Parab,18.0,Male,Mechanical ,FY,100.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,Sports,"Cricket, Crafting ",8.402000000000001,0,2,0,0
+harshyadav5034@gmail.com,HARSH Yadav ,18.0,Male,ECE ,FY,100.0,9.3,8.4,8.3,8.4,8.75,No,0.0,,Maybe,Never,Sports,Cricket ,8.63,0,0,1,0
+vivekpandey07708@gmail.com,Vivek pandey,17.0,Male,ECE,FY,100.0,8.78,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Sports,Interaction with people to gain knowledge and playing cricket,8.526,0,1,1,0
+kolekardhruv@gmail.com,Dhruv kolekar,18.0,Male,Me,TY,75.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Sports,"Cricket,vollyball",8.402000000000001,0,1,1,0
+ramsabadp65@gmail.com,Nitesh Prajapati ,19.0,Male,Electronics and computer engineering ,FY,80.0,8.23,8.4,8.3,8.4,8.75,No,0.0,,No,Rarely,Sports,Playing cricket and videos game,8.416,0,1,1,0
+hetansh2612@gmail.com,Hetansh Niraj vyas ,30.0,Male,Computer science ,TY,87.0,8.16,8.4,10.0,9.9,8.9,No,0.0,,No,Rarely,Sports,Chess,9.072,0,1,1,0
+vy0621186@gmail.com,Taj,26.0,Male,Co,TY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,No,0.0,,Maybe,Never,,Carrom ,8.402000000000001,0,0,1,0
+shubhamtoraskar8g@gmail.com,Shubham Sanjay Toraskar ,18.0,Male,Computer engineering ,TY,70.26701754385965,9.0,8.2,8.5,9.1,9.3,No,0.0,,No,Occasionally,"Academic competitions, Sports, Workshops/seminars",Table tennis ,8.819999999999999,0,2,0,0
+vansh.striker@gmail.com,Vijay,19.0,Male,Bat,FY,5.0,8.16,8.4,8.3,8.4,8.75,Yes,0.0,Semester 4,No,Occasionally,,Nothing,8.402000000000001,1,2,1,0
+atharvhirve1717@gmail.com,Atharva Hirve ,22.0,Male,Sybaf,SY,0.0,8.16,8.4,8.3,8.4,8.75,No,0.0,Semester 4,Yes,Occasionally,Sports,H,8.402000000000001,0,2,1,0
+jaydeepborgaonkar129@gmail.com,Jaydeep Borgaonkar ,19.0,Male,BSC CS,SY,70.26701754385965,7.6,8.08,8.36,8.4,8.75,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",,8.238,0,2,0,0
+dhvanitdoshi043@gmail.com,DHVANIT,21.0,Male,BAF,TY,8.0,9.25,8.8,8.95,7.7,7.98,No,0.0,,No,Rarely,"Academic competitions, Sports",SWIMMING ,8.536000000000001,0,1,2,1
+collegeimperial310@gmail.com,Mr-Imperial-X,20.0,Male,Bsc DS,TY,56.0,8.9,9.1,9.1,9.2,9.1,No,0.0,,No,Never,Sports,BGMI and Gaming Sessions with friends 🥺,9.08,0,0,2,1
+manas221205@gmail.com,Manas,20.0,Male,B engineering ,TY,70.0,8.0,8.4,8.5,8.4,8.5,No,0.0,,No,Occasionally,Sports,Football ,8.36,0,2,0,0
+itsmr.cv1909@gmail.com,chaitanya,20.0,Male,b com,TY,14.0,8.78,8.9,7.85,8.1,7.8,No,0.0,,No,Never,,"art,sports ,workout and cooking",8.286,0,0,2,1
+khanashfiya352@gmail.com,Khan Ashfiya,20.0,Female,Bms,TY,70.26701754385965,8.5,8.0,8.8,7.9,8.9,No,0.0,,No,Rarely,,Badminton ,8.42,0,1,1,0
+anshumantripathi74832@gmail.com,Anshuman Tripathi,19.0,Male,IT,SY,70.26701754385965,7.77,8.19,8.0,8.4,8.75,No,0.0,,No,Rarely,Sports,Cricket,8.222,0,1,1,0
+bm204484@gmail.com,BANTI,19.0,Male,Data Science ,SY,70.26701754385965,8.16,8.4,8.3,8.4,8.75,Yes,0.0,,No,Never,,.,8.402000000000001,1,0,1,0
+nayansaroj922@gmail.com,Nayan saroj ,20.0,Male,Bscit,TY,79.0,9.1,8.9,8.7,8.3,8.3,No,0.0,,No,Occasionally,"Cultural events, Sports",Football ,8.66,0,2,0,0
+adarshppathak2007@gmail.com,Adarsh pathak,18.0,Male,Computer engineering ,FY,99.0,7.4,8.4,8.3,8.4,8.75,Yes,2.0,Semester 1,Yes,Occasionally,Cultural events,Cricket ,8.25,1,2,1,0
+arpitstiwari2007@gmail.com,Karan tiwari ,19.0,Male,Engineering ,FY,90.0,8.1,8.4,8.3,8.4,8.75,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Sports",Volleyball ,8.39,0,3,0,0
+siddhiadvilkar123@gmail.com,siddhi Advilkar,19.0,Female,Bsc.IT,TY,70.26701754385965,7.8,6.9,6.2,6.5,7.5,No,0.0,,No,Never,,drawing,6.9799999999999995,0,0,1,0
+guptanilesh028@gmail.com,Nilesh Gupta ,20.0,Male,Computer science ,SY,100.0,7.0,7.0,8.3,8.4,8.75,Yes,1.0,Semester 2,No,Regularly,"Academic competitions, Workshops/seminars, Social service / NSS",Timepass ,7.890000000000001,1,3,1,0
+shreya.h.singh123@gmail.com,Shreya Singh ,19.0,Female,Microbiology ,SY,75.0,9.18,8.36,7.45,8.22,7.56,No,0.0,,Maybe,Occasionally,Social service / NSS,.,8.154,0,2,0,0
+aayushk.nambiar@gmail.com,Aayush Nambiar ,18.0,Male,Ds,FY,70.26701754385965,7.91,8.0,8.0,8.0,7.0,No,0.0,,No,Rarely,Sports,Sports ,7.781999999999999,0,1,1,0
+nadarroshni90@gmail.com,Roshni Nadar ,20.0,Female,TYIT,TY,70.26701754385965,6.4,6.0,5.4,5.7,6.4,No,0.0,Semester 4,No,Occasionally,Academic competitions,Sketching ,5.9799999999999995,0,2,1,0
+kamlasajanlalgupta@gmail.com,Laxmi Gupta ,20.0,Female,Microbiology ,SY,70.26701754385965,9.0,9.0,9.0,8.4,8.75,No,0.0,,No,Occasionally,Social service / NSS,...,8.83,0,2,0,0
+adityanarwade101@gmail.com,Aditya Narwade ,20.0,Male,Data science ,TY,75.0,8.0,8.0,8.0,8.0,8.0,No,0.0,Semester 3,No,Regularly,"Cultural events, Sports, Workshops/seminars, Social service / NSS",Productive working ,8.0,0,3,0,0
+pjha77212@gmail.com,prince jha,19.0,Male,bscit ,SY,90.0,8.0,8.5,7.8,8.4,8.75,Yes,3.0,"Semester 1, Semester 2, Semester 3",No,Never,Sports,playing cricket ,8.290000000000001,1,0,2,1
+anujkumaryadav6388@gmail.com,Anuj kumar,20.0,Male,BSCIT,SY,100.0,10.0,10.0,10.0,10.0,10.0,No,0.0,,No,Never,Academic competitions,Photographer ,10.0,0,0,1,0
+abhishekkanojia913@gmail.com,Abhishek kanojiya,20.0,Male,Bscit,SY,75.0,8.16,8.4,7.4,8.4,8.75,Yes,3.0,"Semester 1, Semester 2",Maybe,Rarely,Sports,Football and cricket,8.222,1,1,2,1
+pankajkanojiya5172@gmail.com,Pankaj Kanojiya ,19.0,Male,BSC-IT,SY,75.0,8.0,8.0,8.3,8.4,8.75,Yes,4.0,"Semester 3, Semester 4",Maybe,Occasionally,Sports,Playing boxing ,8.290000000000001,1,2,1,0
+nitinhridayshukla@gmail.com,Nitin shukla ,19.0,Male,Bsc IT,TY,89.0,5.2,6.4,7.3,8.2,9.2,No,0.0,,No,Never,"Cultural events, Workshops/seminars",Cricket ,7.26,0,0,1,0
+hrushikeshsangaleviiih@gmail.com,Hrushikesh ,19.0,Male,CSE AIML ,FY,90.0,8.16,8.4,8.3,8.4,8.75,No,0.0,,No,Occasionally,"Sports, Workshops/seminars",Sports,8.402000000000001,0,2,0,0
+simransinghr928@gmail.com,Simran singh,20.0,Female,Microbiology ,TY,70.26701754385965,7.0,6.0,8.3,6.0,8.75,No,0.0,Semester 5,No,Never,Cultural events,"Dance is more than just a hobby; it is a powerful form of self-expression that allows a person to communicate emotions without speaking a single word. When someone dances, they are not just moving their body to music, but telling a story through rhythm, expressions, and energy. Each step, turn, and gesture reflects feelings that sometimes cannot be explained in words. Whether the music is slow and emotional or fast and energetic, dance becomes a beautiful way to release stress, express happiness, and even heal from difficult moments. It creates a space where a person can truly be themselves, free from judgment, and completely connected to the present moment.  Beyond emotional expression, dance also plays a significant role in physical and mental well-being. Regular dancing improves flexibility, balance, coordination, and stamina. It strengthens muscles and enhances posture, making the body feel more active and confident. At the same time, it boosts mental health by reducing anxiety and increasing positive energy. When you practice dance consistently, you develop discipline, focus, and determination. Learning new steps requires patience and repetition, and performing in front of others builds confidence and courage. Over time, dance shapes not only the body but also the personality.  Dance also connects people culturally and socially. Different forms of dance represent different traditions, histories, and communities. Classical dances preserve heritage and storytelling, while modern styles reflect creativity and evolving trends. Through dance, people can connect with others who share the same passion, creating friendships and a sense of belonging. Whether performed on a stage, at a celebration, or simply in a room alone with music playing, dance brings joy and freedom. It transforms ordinary moments into memorable ones and turns music into movement that feels alive.",7.209999999999999,0,0,1,0
+bhaveshdalvi1210@gmail.com,Bhavesh Prakash Dalvi,20.0,Male,Data Science,TY,80.0,9.5,10.0,8.7,9.1,9.1,No,0.0,,No,Rarely,"Sports, Workshops/seminars","Chess,Karate",9.28,0,1,1,0
+bhaveshpdalvi@gmail.com,Bhavesh ,20.0,Male,Data Science,TY,60.0,8.7,9.0,8.5,8.2,8.6,No,0.0,,No,Rarely,"Sports, Workshops/seminars","Chess,Karate",8.6,0,1,2,1
+yashupal2004@gmail.com,John cena,19.0,Male,Wwe,TY,70.26701754385965,10.0,10.0,10.0,10.0,10.0,No,0.0,,No,Regularly,Sports,Not to come to the college daily and sleep peacefully ,10.0,0,3,0,0
+singhpalaks0908@gmail.com,Palak Singh ,20.0,Female,TYDS ,TY,70.26701754385965,8.16,9.7,7.7,8.7,9.4,No,0.0,,No,Occasionally,"Cultural events, Sports",Sleeping,8.732,0,2,0,0
+bindu.gulati.72@gmail.com,Bindu ,21.0,Female,DS,SY,76.0,8.7,9.5,7.3,8.4,8.75,No,0.0,,No,Never,,Carrom,8.53,0,0,1,0
+suru93497@gmail.com,Sneha Pandey ,19.0,Female,BA,TY,90.0,9.0,9.16,9.32,9.38,9.16,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars","Reading, walking and editing ",9.203999999999999,0,3,0,0
+bindugulati4@gmail.com,Raj Shamani,21.0,Male,Computer Science,TY,89.0,6.7,7.6,8.9,9.4,10.0,No,0.0,,Yes,Rarely,Sports,Basketball,8.52,0,1,1,0
+monishgulati24@gmail.com,Monish Gulati,20.0,Male,Bsc Data Science,TY,75.0,8.2,7.3,9.5,6.5,0.0,Yes,4.0,Semester 5,No,Rarely,Sports,Yoga,6.3,1,1,3,1
+tsapid.02201944@gmail.com,Varun Kumar,21.0,Male,Bsc IT,TY,65.0,7.6,8.4,9.2,6.9,0.0,Yes,1.0,Semester 4,Yes,Regularly,"Academic competitions, Cultural events",Singing,6.42,1,3,3,1
+gulatimonish@gmail.com,Tushar Gulati,20.0,Male,Bsc Computer Science,TY,88.0,9.5,8.6,7.1,10.0,0.0,No,0.0,,Maybe,Rarely,Sports,Basketball,7.040000000000001,0,1,1,0
+yashtelang2005@gmail.com,yash telang ,20.0,Male,tyba,TY,90.0,8.6,9.0,8.9,9.4,9.6,No,0.0,,No,Occasionally,"Academic competitions, Workshops/seminars",working out ,9.1,0,2,0,0
+prafulsharma1107@gmail.com,Prafulkumar Ravindra Sharma ,20.0,Male,Bachelor in Political Science ,TY,93.0,8.82,9.0,9.18,9.27,10.0,No,0.0,,No,Regularly,"Academic competitions, Cultural events, Workshops/seminars","Reading, Binge Watching, Calligraphy ",9.254,0,3,0,0
+mahising0620@gmail.com,Mahi  Singh ,19.0,Female,Data science ,SY,83.0,6.78,7.52,7.94,8.4,8.75,No,0.0,Semester 1,No,Occasionally,"Cultural events, Sports, Workshops/seminars","Dance , cooking ",7.878,0,2,0,0
+nandiniisingh09@gmail.com,Nandini singh,19.0,Female,be,FY,90.0,8.4,8.4,8.3,8.4,8.75,No,0.0,,No,Never,,none,8.45,0,0,1,0
+thakur998767@gmail.com,Himanshu,25.0,Male,Data science ,TY,0.0,9.4,9.0,8.0,9.1,8.0,No,0.0,,No,Rarely,,scrolling ,8.7,0,1,2,1
+peterlobo2005@gmail.com,Peter lobo,20.0,Male,Bsc IT,TY,70.26701754385965,8.9,9.0,9.9,10.0,9.6,No,0.0,,Maybe,Never,,Volleyball ,9.48,0,0,1,0

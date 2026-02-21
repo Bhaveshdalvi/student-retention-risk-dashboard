@@ -1,8 +1,14 @@
 import React from "react";
 import {
-  Card, CardContent, Typography,
-  Table, TableBody, TableCell,
-  TableHead, TableRow, Chip
+  Card,
+  CardContent,
+  Typography,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  Chip
 } from "@mui/material";
 
 function StudentTable({ students }) {
@@ -10,7 +16,7 @@ function StudentTable({ students }) {
   return (
     <Card sx={{ mt: 3 }}>
       <CardContent>
-        <Typography variant="h6">
+        <Typography variant="h6" gutterBottom>
           Complete Student Dataset
         </Typography>
 
@@ -60,13 +66,16 @@ function StudentTable({ students }) {
                   <TableCell>{student.avg_gpa}</TableCell>
                   <TableCell>{student.backlog_count}</TableCell>
                   <TableCell>{student.event_score}</TableCell>
+
+                  {/* ✅ FIXED HERE */}
                   <TableCell>
-                    {student.dropout_flag === 1 ? (
+                    {Number(student.dropout_risk) === 1 ? (
                       <Chip label="High" color="error" />
                     ) : (
                       <Chip label="Low" color="success" />
                     )}
                   </TableCell>
+
                 </TableRow>
               ))}
             </TableBody>
