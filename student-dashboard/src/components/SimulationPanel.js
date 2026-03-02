@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Card, CardContent, Typography, Button, Select, MenuItem } from "@mui/material";
+import { Card, CardContent, Typography, Button, Select, MenuItem, Chip } from "@mui/material";
 import GaugeChart from "react-gauge-chart";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 function SimulationPanel({ students }) {
 
   const [selectedStudent, setSelectedStudent] = useState("");
   const [result, setResult] = useState(null);
+
+  const getRiskLevel = (prob) => {
+    if (prob <= 0.30) return { label: "Low", color: "success" };
+    if (prob <= 0.60) return { label: "Medium", color: "warning" };
+    return { label: "High", color: "error" };
+  };
 
   const handlePredict = async () => {
     if (!selectedStudent) return;
@@ -23,7 +28,6 @@ function SimulationPanel({ students }) {
   return (
     <div style={{ display: "flex", gap: "40px", marginTop: "20px" }}>
 
-      {/* LEFT CARD */}
       <Card style={{ width: "300px", padding: "20px" }}>
         <CardContent>
           <Typography variant="h6">Select Student</Typography>
@@ -52,49 +56,31 @@ function SimulationPanel({ students }) {
         </CardContent>
       </Card>
 
-      {/* RIGHT SECTION */}
       {result && (
-        <div style={{ display: "flex", gap: "40px" }}>
+        <Card style={{ width: "350px", padding: "20px" }}>
+          <CardContent>
+            <Typography variant="h6">Risk Probability</Typography>
 
-          {/* Probability Meter */}
-          <Card style={{ width: "350px", padding: "20px" }}>
-            <CardContent>
-              <Typography variant="h6">Risk Probability</Typography>
+            <GaugeChart
+              id="risk-gauge"
+              percent={result.risk_probability}
+              colors={["#4CAF50", "#FFC107", "#F44336"]}
+              arcWidth={0.3}
+              formatTextValue={() =>
+                `${(result.risk_probability * 100).toFixed(2)}%`
+              }
+            />
 
-              <GaugeChart
-                id="risk-gauge"
-                percent={result.probability}
-                colors={["#4CAF50", "#FFC107", "#F44336"]}
-                arcWidth={0.3}
-                formatTextValue={() =>
-                  `${(result.probability * 100).toFixed(2)}%`
-                }
+            <div style={{ marginTop: "20px", textAlign: "center" }}>
+              <Chip
+                label={getRiskLevel(result.risk_probability).label}
+                color={getRiskLevel(result.risk_probability).color}
+                size="medium"
               />
-            </CardContent>
-          </Card>
+            </div>
 
-          {/* Bar Comparison */}
-          <Card style={{ width: "400px", padding: "20px" }}>
-            <CardContent>
-              <Typography variant="h6">Risk Comparison</Typography>
-
-              <ResponsiveContainer width="100%" height={250}>
-                <BarChart
-                  data={[
-                    { name: "Low", value: (1 - result.probability) * 100 },
-                    { name: "High", value: result.probability * 100 }
-                  ]}
-                >
-                  <XAxis dataKey="name" />
-                  <YAxis domain={[0, 100]} />
-                  <Tooltip />
-                  <Bar dataKey="value" fill="#1976D2" />
-                </BarChart>
-              </ResponsiveContainer>
-            </CardContent>
-          </Card>
-
-        </div>
+          </CardContent>
+        </Card>
       )}
     </div>
   );

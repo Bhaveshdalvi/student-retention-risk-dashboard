@@ -3,7 +3,6 @@ import axios from "axios";
 import SimulationPanel from "./SimulationPanel";
 import StudentTable from "./StudentTable";
 import KPISection from "./KPISection";
-import ChartsSection from "./ChartsSection";
 
 function Dashboard() {
 
@@ -17,17 +16,13 @@ function Dashboard() {
 
   return (
     <div style={{ padding: "30px" }}>
-      <h2>🎓 Student Retention Risk Dashboard</h2>
+      <h2>🎓 Academic Risk Prediction Dashboard</h2>
 
       <KPISection students={students} />
 
       <br />
 
       <SimulationPanel students={students} />
-
-      <br />
-
-      <ChartsSection students={students} />
 
       <br />
 

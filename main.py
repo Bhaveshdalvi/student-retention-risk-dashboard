@@ -1,38 +1,23 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-from train_model import train_model
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import joblib
 
 # ===============================
 # LOAD DATA
 # ===============================
 
-df = pd.read_csv("student_retention_realistic_names_5236.csv")
+df = pd.read_csv("student_retention_10percent_null_10percent_outliers.csv")
 
 print("Initial Shape:", df.shape)
 
-# Clean column names
 df.columns = df.columns.str.strip().str.lower()
 
 # ===============================
-# HANDLE TARGET (SAFE)
-# ===============================
-
-if "dropout_thought" not in df.columns:
-    raise ValueError("Target column 'dropout_thought' not found in dataset!")
-
-df["dropout_thought"] = pd.to_numeric(df["dropout_thought"], errors="coerce")
-
-# Drop rows where target is missing
-df = df.dropna(subset=["dropout_thought"])
-
-df["dropout_thought"] = df["dropout_thought"].astype(int)
-
-print("After dropping missing target:", df.shape)
-print("Target Distribution:\n", df["dropout_thought"].value_counts())
-
-# ===============================
-# HANDLE NUMERIC COLUMNS
+# HANDLE NULL VALUES (FILL)
 # ===============================
 
 numeric_cols = [
@@ -45,15 +30,26 @@ numeric_cols = [
 for col in numeric_cols:
     df[col] = pd.to_numeric(df[col], errors="coerce")
 
-# Fill numeric nulls with median
 df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].median())
+
+# ===============================
+# REMOVE OUTLIERS
+# ===============================
+
+df = df[(df["attendance"] >= 30) & (df["attendance"] <= 100)]
+
+for col in ["gpa_sem1","gpa_sem2","gpa_sem3","gpa_sem4","gpa_sem5"]:
+    df = df[(df[col] >= 3) & (df[col] <= 10)]
+
+df = df[(df["backlog_count"] >= 0) & (df["backlog_count"] <= 10)]
+
+print("After Cleaning:", df.shape)
 
 # ===============================
 # FEATURE ENGINEERING
 # ===============================
 
-gpa_cols = ["gpa_sem1", "gpa_sem2", "gpa_sem3", "gpa_sem4", "gpa_sem5"]
-
+gpa_cols = ["gpa_sem1","gpa_sem2","gpa_sem3","gpa_sem4","gpa_sem5"]
 df["avg_gpa"] = df[gpa_cols].mean(axis=1)
 
 event_map = {
@@ -69,7 +65,22 @@ df["event_score"] = df["event_participation"].map(event_map).fillna(0)
 df["has_backlog"] = np.where(df["backlog_count"] > 0, 1, 0)
 
 # ===============================
-# ENCODING CATEGORICAL VARIABLES
+# CREATE ACADEMIC RISK SCORE
+# ===============================
+
+risk_score = (
+    (100 - df["attendance"]) * 0.3 +
+    (10 - df["avg_gpa"]) * 8 +
+    df["backlog_count"] * 5 +
+    (3 - df["event_score"]) * 4
+)
+
+df["risk_probability"] = (
+    risk_score - risk_score.min()
+) / (risk_score.max() - risk_score.min())
+
+# ===============================
+# ENCODING
 # ===============================
 
 df_encoded = df.copy()
@@ -96,36 +107,69 @@ features = [
 ]
 
 X = df_encoded[features]
-y = df_encoded["dropout_thought"]
-
-print("Final Dataset Shape:", X.shape)
-print("Class Distribution:\n", y.value_counts())
+y = df_encoded["risk_probability"]
 
 # ===============================
-# SAVE CLEAN FILES
+# TRAIN-TEST SPLIT
 # ===============================
 
-df.to_csv("display_student_data.csv", index=False)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.25, random_state=42
+)
+
+# ===============================
+# TRAIN REGRESSION MODEL
+# ===============================
+
+model = RandomForestRegressor(
+    n_estimators=300,
+    max_depth=10,
+    random_state=42
+)
+
+model.fit(X_train, y_train)
+
+print("Academic Risk Model Trained Successfully!")
+
+# ===============================
+# EVALUATION (REGRESSION METRICS)
+# ===============================
+
+y_pred = model.predict(X_test)
+
+mae = mean_absolute_error(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+rmse = np.sqrt(mse)
+r2 = r2_score(y_test, y_pred)
+
+print("\n📊 Regression Evaluation Metrics:")
+print("MAE:", round(mae, 4))
+print("RMSE:", round(rmse, 4))
+print("R2 Score:", round(r2, 4))
+
+# ===============================
+# GENERATE FULL DATASET PREDICTIONS
+# ===============================
+
+df_encoded["predicted_risk_probability"] = model.predict(X)
+
+df_encoded["predicted_risk_probability"] = \
+    df_encoded["predicted_risk_probability"].clip(0, 1)
+
+# ===============================
+# FORMAT FOR DASHBOARD
+# ===============================
+
+df_encoded["attendance"] = df_encoded["attendance"].round(0).astype(int)
+df_encoded["avg_gpa"] = df_encoded["avg_gpa"].round(1)
+df_encoded["predicted_risk_probability"] = \
+    df_encoded["predicted_risk_probability"].round(2)
+
+# ===============================
+# SAVE MODEL + DATA
+# ===============================
+
 df_encoded.to_csv("processed_student_data.csv", index=False)
+joblib.dump(model, "student_retention_model.pkl")
 
-# ===============================
-# TRAIN MODEL
-# ===============================
-
-model = train_model(X, y)
-
-print("Model trained successfully!")
-print("after cleaning:",df.shape)
-
-# ===============================
-# GENERATE PREDICTIONS FOR FULL DATASET
-# ===============================
-
-df_encoded["predicted_dropout"] = model.predict(X)
-df_encoded["predicted_probability"] = model.predict_proba(X)[:, 1]
-
-# Save updated files
-df_encoded.to_csv("processed_student_data.csv", index=False)
-df.to_csv("display_student_data.csv", index=False)
-
-print("Predictions saved successfully!")
+print("\nPredictions saved successfully!")

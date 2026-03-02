@@ -13,91 +13,57 @@ import {
 
 function StudentTable({ students }) {
 
-  if (!students || students.length === 0) return null;
+  const getRiskLevel = (prob) => {
+    if (prob <= 0.30) return { label: "Low", color: "success" };
+    if (prob <= 0.60) return { label: "Medium", color: "warning" };
+    return { label: "High", color: "error" };
+  };
 
   return (
     <Card sx={{ mt: 3 }}>
       <CardContent>
 
         <Typography variant="h6" gutterBottom>
-          Complete Student Dataset (Actual vs Predicted)
+          Student Academic Risk Overview
         </Typography>
 
-        <div
-          style={{
-            maxHeight: "500px",
-            overflowY: "auto",
-            overflowX: "auto",
-            border: "1px solid #ddd"
-          }}
-        >
-          <Table sx={{ minWidth: 1600 }}>
+        <div style={{ maxHeight: "500px", overflowY: "auto" }}>
+          <Table>
             <TableHead>
               <TableRow>
                 <TableCell>Name</TableCell>
-                <TableCell>Age</TableCell>
-                <TableCell>Gender</TableCell>
-                <TableCell>Course</TableCell>
-                <TableCell>Year</TableCell>
                 <TableCell>Attendance</TableCell>
                 <TableCell>Avg GPA</TableCell>
-                <TableCell>Backlog Count</TableCell>
-                <TableCell>Event Score</TableCell>
-
-                <TableCell>Actual</TableCell>
-                <TableCell>Predicted</TableCell>
-                <TableCell>Probability</TableCell>
+                <TableCell>Backlogs</TableCell>
+                <TableCell>Risk %</TableCell>
+                <TableCell>Risk Level</TableCell>
               </TableRow>
             </TableHead>
 
             <TableBody>
               {students.map((student, index) => {
 
-                const actual = Number(student.dropout_thought);
-                const predicted = Number(student.predicted_dropout);
-
-                const isWrong = actual !== predicted;
+                const prob = Number(student.predicted_risk_probability);
+                const risk = getRiskLevel(prob);
 
                 return (
                   <TableRow
                     key={index}
                     sx={{
-                      backgroundColor: isWrong ? "#ffe6e6" : "inherit"
+                      backgroundColor:
+                        prob > 0.6 ? "#ffe6e6" : "inherit"
                     }}
                   >
                     <TableCell>{student.name}</TableCell>
-                    <TableCell>{student.age}</TableCell>
-                    <TableCell>{student.gender}</TableCell>
-                    <TableCell>{student.course}</TableCell>
-                    <TableCell>{student.year}</TableCell>
                     <TableCell>{student.attendance}</TableCell>
                     <TableCell>{student.avg_gpa}</TableCell>
                     <TableCell>{student.backlog_count}</TableCell>
-                    <TableCell>{student.event_score}</TableCell>
-
-                    {/* Actual */}
                     <TableCell>
-                      {actual === 1 ? (
-                        <Chip label="High" color="error" />
-                      ) : (
-                        <Chip label="Low" color="success" />
-                      )}
+                      {(prob * 100).toFixed(2)}%
                     </TableCell>
-
-                    {/* Predicted */}
                     <TableCell>
-                      {predicted === 1 ? (
-                        <Chip label="High" color="warning" />
-                      ) : (
-                        <Chip label="Low" color="info" />
-                      )}
+                      <Chip label={risk.label} color={risk.color} />
                     </TableCell>
-
-                    {/* Probability */}
-                    <TableCell>
-                      {(Number(student.predicted_probability) * 100).toFixed(2)}%
-                    </TableCell>
-
                   </TableRow>
                 );
               })}
