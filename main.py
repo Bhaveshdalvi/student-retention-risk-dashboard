@@ -9,7 +9,12 @@ import joblib
 # LOAD DATA
 # ======================================
 
+<<<<<<< Updated upstream
 df = pd.read_csv("student_retention_10percent_null_10percent_outliers.csv")
+=======
+df = pd.read_csv(r"C:\Users\Monish Gulati\Downloads\Student Retention Risk Scoring Model for Higher Education Institutions. (Responses) - Form Responses 1.csv")
+df.columns = df.columns.str.strip()
+>>>>>>> Stashed changes
 
 print("Initial Shape:", df.shape)
 
