@@ -1,5 +1,14 @@
-from flask import Flask, request, jsonify
+# =============================================================================
+# ⚠️  DEPRECATED — DO NOT USE IN PRODUCTION
+# This file is the legacy Flask development server.
+# Production uses serverless handlers in /api/*.py (Vercel).
+#
+# For local development only:   python app.py
+# For production:               vercel dev  OR  vercel --prod
+# =============================================================================
+
 from flask_cors import CORS
+from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
 import os
@@ -30,17 +39,27 @@ features = [
     "age"
 ]
 
-# ==========================
-# GET STUDENTS (Readable)
-# ==========================
+FEATURE_LABELS = {
+    "attendance":    "Attendance",
+    "avg_gpa":       "Avg GPA",
+    "has_backlog":   "Has Backlog",
+    "backlog_count": "Backlog Count",
+    "event_score":   "Event Score",
+    "gender":        "Gender",
+    "course":        "Course",
+    "year":          "Year",
+    "age":           "Age",
+}
+
+# ── Students ────────────────────────────────────────────────────────────────
 @app.route("/students", methods=["GET"])
+@app.route("/api/students", methods=["GET"])   # production-matching path
 def get_students():
     return df_display.to_json(orient="records")
 
-# ==========================
-# PREDICT
-# ==========================
+# ── Predict ──────────────────────────────────────────────────────────────────
 @app.route("/predict", methods=["POST"])
+@app.route("/api/predict", methods=["POST"])   # production-matching path
 def predict():
     data = request.json
     name = data["name"]
@@ -56,6 +75,22 @@ def predict():
     return jsonify({
         "probability": float(probability)
     })
+
+# ── Feature Importance ───────────────────────────────────────────────────────
+@app.route("/feature-importance", methods=["GET"])
+@app.route("/api/feature-importance", methods=["GET"])   # production-matching path
+def feature_importance():
+    importances = model.feature_importances_
+    total = importances.sum() or 1.0
+    result = [
+        {
+            "feature": FEATURE_LABELS.get(feat, feat),
+            "importance": round(float(imp / total) * 100, 2)
+        }
+        for feat, imp in zip(features, importances)
+    ]
+    result.sort(key=lambda x: x["importance"], reverse=True)
+    return jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)

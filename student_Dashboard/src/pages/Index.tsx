@@ -10,6 +10,11 @@ import { RiskCharts } from "@/components/dashboard/RiskCharts";
 import { TopAtRiskStudents } from "@/components/dashboard/TopAtRiskStudents";
 import { StudentTable } from "@/components/dashboard/StudentTable";
 import { KeyRiskInsights } from "@/components/dashboard/KeyRiskInsights";
+import { GpaTrendChart } from "@/components/dashboard/GpaTrendChart";
+import { AttendanceScatterChart } from "@/components/dashboard/AttendanceScatterChart";
+import { BacklogImpactChart } from "@/components/dashboard/BacklogImpactChart";
+import { ModelObservations } from "@/components/dashboard/ModelObservations";
+import { FeatureImportanceChart } from "@/components/dashboard/FeatureImportanceChart";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Index = () => {
@@ -101,11 +106,20 @@ const Index = () => {
             </TabsContent>
 
             <TabsContent value="insights" className="space-y-6 animate-in fade-in-50 duration-500">
-              <div className="glass-card p-12 text-center text-muted-foreground flex flex-col items-center justify-center min-h-[400px]">
-                <Activity className="w-12 h-12 mb-4 text-muted-foreground/50" />
-                <h2 className="text-xl font-semibold text-foreground mb-2">Model Insights</h2>
-                <p>Advanced predictive analytics and risk factors will be displayed here.</p>
+              {/* Row 1: GPA Trend — full width */}
+              <GpaTrendChart />
+
+              {/* Row 2: Scatter (left) + Backlog (right) */}
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+                <AttendanceScatterChart />
+                <BacklogImpactChart />
               </div>
+
+              {/* Row 3: Executive Insight Cards */}
+              <ModelObservations />
+
+              {/* Row 4: Feature Importance */}
+              <FeatureImportanceChart />
             </TabsContent>
           </Tabs>
 

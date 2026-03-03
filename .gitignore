@@ -10,3 +10,20 @@ student-dashboard/build/
 # OS
 .DS_Store
 Thumbs.db
+node_modules
+
+# student_Dashboard
+student_Dashboard/node_modules/
+student_Dashboard/dist/
+student_Dashboard/.env.development.local
+student_Dashboard/.env.local
+
+# Training data (not needed at runtime)
+Student_Data.csv
+
+# OS
+__pycache__/
+*.pyc
+
+# Vercel
+.vercel
