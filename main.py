@@ -1,148 +1,177 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-from train_model import train_model
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import joblib
 
-# ==============================
-# 1️⃣ Load Data
-# ==============================
+# ======================================
+# LOAD DATA
+# ======================================
 
-df = pd.read_csv(r"C:\Users\Bhavesh P Dalvi\OneDrive\Documents\Student Retention Risk Scoring Model for Higher Education Institutions. (Responses) -166.csv")
-df.columns = df.columns.str.strip()
+df = pd.read_csv("student_retention_10percent_null_10percent_outliers.csv")
 
-print("Original Shape:", df.shape)
+print("Initial Shape:", df.shape)
 
-# ==============================
-# 2️⃣ Rename Columns
-# ==============================
+df.columns = df.columns.str.strip().str.lower()
 
-df.rename(columns={
-    "Full Name": "name",
-    "Age": "age",
-    "Gender": "gender",
-    "Course / Program Enrolled": "course",
-    "Year of Study": "year",
-    "What is your class attendance percentage?": "attendance",
-    "GPA / SGPA of Semester 1": "gpa_sem1",
-    "GPA / SGPA of Semester 2": "gpa_sem2",
-    "GPA / SGPA of Semester 3": "gpa_sem3",
-    "GPA / SGPA of Semester 4": "gpa_sem4",
-    "GPA / SGPA of Semester 5": "gpa_sem5",
-    "Have you had any backlogs in previous semesters?": "backlog_status",
-    "If yes, how many backlogs have you had in total?": "backlog_count",
-    "Have you considered dropping out or switching courses at any time?": "dropout_thought",
-    "How often do you participate in college activities or events?": "event_participation"
-}, inplace=True)
+# ======================================
+# HANDLE NULL VALUES (FILL, NOT DROP)
+# ======================================
 
-# ==============================
-# 3️⃣ Convert Numeric Columns
-# ==============================
+numeric_cols = [
+    "age", "attendance",
+    "gpa_sem1", "gpa_sem2", "gpa_sem3",
+    "gpa_sem4", "gpa_sem5",
+    "backlog_count"
+]
 
-df['age'] = pd.to_numeric(df['age'], errors='coerce')
-df['attendance'] = pd.to_numeric(df['attendance'], errors='coerce')
+for col in numeric_cols:
+    df[col] = pd.to_numeric(df[col], errors="coerce")
 
-gpa_cols = ['gpa_sem1','gpa_sem2','gpa_sem3','gpa_sem4','gpa_sem5']
-df[gpa_cols] = df[gpa_cols].apply(pd.to_numeric, errors='coerce')
+df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].median())
 
-df['backlog_count'] = df['backlog_count'].astype(str).str.extract(r'(\d+)')
-df['backlog_count'] = pd.to_numeric(df['backlog_count'], errors='coerce')
+# ======================================
+# REMOVE OUTLIERS
+# ======================================
 
-# ==============================
-# 4️⃣ Fill Missing Values
-# ==============================
+df = df[(df["attendance"] >= 30) & (df["attendance"] <= 100)]
 
-df['age'].fillna(df['age'].mean(), inplace=True)
-df['attendance'].fillna(df['attendance'].mean(), inplace=True)
-df[gpa_cols] = df[gpa_cols].fillna(df[gpa_cols].mean())
+for col in ["gpa_sem1","gpa_sem2","gpa_sem3","gpa_sem4","gpa_sem5"]:
+    df = df[(df[col] >= 3) & (df[col] <= 10)]
 
-df['backlog_count'].fillna(0, inplace=True)
+df = df[(df["backlog_count"] >= 0) & (df["backlog_count"] <= 10)]
 
-df['gender'].fillna(df['gender'].mode()[0], inplace=True)
-df['course'].fillna(df['course'].mode()[0], inplace=True)
-df['year'].fillna(df['year'].mode()[0], inplace=True)
+print("After Cleaning:", df.shape)
 
-# ==============================
-# 5️⃣ Remove Invalid Rows
-# ==============================
+# ======================================
+# FEATURE ENGINEERING
+# ======================================
 
-df = df[(df['age'] >= 17) & (df['age'] <= 30)]
-df = df[(df['attendance'] >= 0) & (df['attendance'] <= 100)]
-
-for col in gpa_cols:
-    df[col] = df[col].astype(str).str.strip()
-    df[col] = df[col].replace(['.', '-', '', ' '], np.nan)
-    df[col] = pd.to_numeric(df[col], errors='coerce')
-    df.loc[(df[col] < 0) | (df[col] > 10), col] = np.nan
-    df[col].fillna(df[col].median(), inplace=True)
-
-df = df[(df['backlog_count'] >= 0) & (df['backlog_count'] <= 20)]
-
-# ==============================
-# 6️⃣ Feature Engineering
-# ==============================
-
-df['avg_gpa'] = df[gpa_cols].mean(axis=1)
-
-df['has_backlog'] = df['backlog_status'].map({'Yes': 1, 'No': 0})
+gpa_cols = ["gpa_sem1","gpa_sem2","gpa_sem3","gpa_sem4","gpa_sem5"]
+df["avg_gpa"] = df[gpa_cols].mean(axis=1)
 
 event_map = {
-    "Regularly": 3,
-    "Occasionally": 2,
-    "Rarely": 1,
-    "Never": 0
+    "regularly": 3,
+    "occasionally": 2,
+    "rarely": 1,
+    "never": 0
 }
-df['event_score'] = df['event_participation'].map(event_map)
 
-df['dropout_flag'] = df['dropout_thought'].map({'Yes': 1, 'Maybe': 1, 'No': 0})
+df["event_participation"] = df["event_participation"].astype(str).str.lower()
+df["event_score"] = df["event_participation"].map(event_map).fillna(0)
 
-# ==============================
-# 🔥 7️⃣ KEEP DISPLAY COPY
-# ==============================
+df["has_backlog"] = np.where(df["backlog_count"] > 0, 1, 0)
 
-df_display = df.copy()
+# ======================================
+# CREATE RISK SCORE (TARGET)
+# ======================================
 
-# ==============================
-# 🔥 8️⃣ ENCODE FOR MODEL
-# ==============================
+risk_score = (
+    (100 - df["attendance"]) * 0.3 +
+    (10 - df["avg_gpa"]) * 8 +
+    df["backlog_count"] * 5 +
+    (3 - df["event_score"]) * 4
+)
+
+df["risk_probability"] = (
+    risk_score - risk_score.min()
+) / (risk_score.max() - risk_score.min())
+
+# ======================================
+# ENCODING FOR MODEL
+# ======================================
 
 df_encoded = df.copy()
 
-categorical_cols = ['gender','course','year']
+categorical_cols = ["gender", "course", "year"]
 
 for col in categorical_cols:
-    le = LabelEncoder()
-    df_encoded[col] = le.fit_transform(df_encoded[col].astype(str))
+    df_encoded[col] = LabelEncoder().fit_transform(df_encoded[col].astype(str))
 
-# ==============================
-# 9️⃣ Select Features
-# ==============================
+# ======================================
+# SELECT FEATURES
+# ======================================
 
 features = [
-    'attendance',
-    'avg_gpa',
-    'has_backlog',
-    'backlog_count',
-    'event_score',
-    'gender',
-    'course',
-    'year',
-    'age'
+    "attendance",
+    "avg_gpa",
+    "has_backlog",
+    "backlog_count",
+    "event_score",
+    "gender",
+    "course",
+    "year",
+    "age"
 ]
 
 X = df_encoded[features]
-y = df_encoded['dropout_flag']
+y = df_encoded["risk_probability"]
 
-# ==============================
-# 🔥 1️⃣0️⃣ SAVE BOTH FILES
-# ==============================
+# ======================================
+# TRAIN MODEL
+# ======================================
 
-df_display.to_csv("display_student_data.csv", index=False)
+model = RandomForestRegressor(
+    n_estimators=300,
+    max_depth=10,
+    random_state=42
+)
+
+model.fit(X, y)
+
+# ======================================
+# EVALUATION
+# ======================================
+
+preds = model.predict(X)
+
+print("\nRegression Evaluation Metrics:")
+print("MAE:", round(mean_absolute_error(y, preds), 4))
+print("RMSE:", round(np.sqrt(mean_squared_error(y, preds)), 4))
+print("R2 Score:", round(r2_score(y, preds), 4))
+
+# ======================================
+# GENERATE PREDICTIONS
+# ======================================
+
+df_encoded["predicted_risk_probability"] = model.predict(X)
+df_encoded["predicted_risk_probability"] = df_encoded["predicted_risk_probability"].clip(0, 1)
+
+# ======================================
+# CREATE DISPLAY DATASET (CLEAN)
+# ======================================
+
+df_display = df.copy()
+
+# Round values
+df_display["attendance"] = df_display["attendance"].round(0).astype(int)
+
+for col in gpa_cols:
+    df_display[col] = df_display[col].round(1)
+
+df_display["avg_gpa"] = df_display["avg_gpa"].round(1)
+
+df_display["predicted_risk_probability"] = df_encoded["predicted_risk_probability"].round(2)
+
+# Add Risk Level
+def get_risk_level(p):
+    if p <= 0.3:
+        return "Low"
+    elif p <= 0.6:
+        return "Medium"
+    else:
+        return "High"
+
+df_display["risk_level"] = df_display["predicted_risk_probability"].apply(get_risk_level)
+
+# ======================================
+# SAVE FILES
+# ======================================
+
 df_encoded.to_csv("processed_student_data.csv", index=False)
+df_display.to_csv("display_student_data.csv", index=False)
 
-print("Datasets saved successfully!")
+joblib.dump(model, "student_retention_model.pkl")
 
-# ==============================
-# 1️⃣1️⃣ Train Model
-# ==============================
-
-model = train_model(X, y)
+print("\nModel and datasets saved successfully!")
