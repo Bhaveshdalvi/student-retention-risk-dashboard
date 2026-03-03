@@ -1,8 +1,5 @@
 {
     "version": 2,
-    "engines": {
-  "python": "3.10"
-},
     "buildCommand": "cd student_Dashboard && npm install && npm run build",
     "outputDirectory": "student_Dashboard/dist",
     "rewrites": [
