@@ -9,8 +9,14 @@ CORS(app)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# Load model
 model = joblib.load(os.path.join(BASE_DIR, "student_retention_model.pkl"))
-df_data = pd.read_csv(os.path.join(BASE_DIR, "processed_student_data.csv"))
+
+# Load DISPLAY file (NOT encoded one)
+df_display = pd.read_csv(os.path.join(BASE_DIR, "display_student_data.csv"))
+
+# Load PROCESSED file for prediction
+df_encoded = pd.read_csv(os.path.join(BASE_DIR, "processed_student_data.csv"))
 
 features = [
     "attendance",
@@ -24,29 +30,31 @@ features = [
     "age"
 ]
 
+# ==========================
+# GET STUDENTS (Readable)
+# ==========================
 @app.route("/students", methods=["GET"])
 def get_students():
-    return df_data.to_json(orient="records")
+    return df_display.to_json(orient="records")
 
+# ==========================
+# PREDICT
+# ==========================
 @app.route("/predict", methods=["POST"])
 def predict():
-
     data = request.json
     name = data["name"]
 
-    student = df_data[df_data["name"] == name]
+    student = df_encoded[df_encoded["name"] == name]
 
     if student.empty:
         return jsonify({"error": "Student not found"})
 
     X_input = student[features]
-
-    probability = model.predict(X_input)[0]
-
-    probability = max(0, min(1, probability))
+    probability = model.predict_proba(X_input)[0][1]
 
     return jsonify({
-        "risk_probability": round(float(probability), 2)
+        "probability": float(probability)
     })
 
 if __name__ == "__main__":
