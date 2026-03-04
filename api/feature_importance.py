@@ -7,6 +7,10 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 import joblib
 import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from config import FEATURES, FEATURE_LABELS
 
 app = Flask(__name__)
 CORS(app, origins=["*"])
@@ -15,29 +19,7 @@ CORS(app, origins=["*"])
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 _model = joblib.load(os.path.join(BASE_DIR, "..", "student_retention_model.pkl"))
 
-FEATURES = [
-    "attendance",
-    "avg_gpa",
-    "has_backlog",
-    "backlog_count",
-    "event_score",
-    "gender",
-    "course",
-    "year",
-    "age",
-]
 
-FEATURE_LABELS = {
-    "attendance":    "Attendance",
-    "avg_gpa":       "Avg GPA",
-    "has_backlog":   "Has Backlog",
-    "backlog_count": "Backlog Count",
-    "event_score":   "Event Score",
-    "gender":        "Gender",
-    "course":        "Course",
-    "year":          "Year",
-    "age":           "Age",
-}
 
 # Pre-compute at cold start — reused for every warm request at zero cost
 _raw = _model.feature_importances_

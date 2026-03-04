@@ -3,6 +3,7 @@
 # Standard libraries we need for data processing, model training,
 # evaluation and saving the model
 
+import os
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
@@ -12,13 +13,15 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import joblib
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 # 2. Load Dataset
 # ------------------------------------------------------------------
 # Reading the student data CSV — this file contains responses collected
 # from students including their GPA, attendance, backlogs etc.
 
-df = pd.read_csv("Student_Data.csv")
+df = pd.read_csv(os.path.join(BASE_DIR, "Student_Data.csv"))
 print("Dataset loaded. Shape:", df.shape)
 
 # Clean up column names — remove extra spaces and make lowercase
@@ -79,6 +82,10 @@ df["event_score"] = df["event_participation"].map(event_map).fillna(0)
 # Binary flag for whether student has any backlogs at all
 df["has_backlog"] = np.where(df["backlog_count"] > 0, 1, 0)
 
+# GPA trend: positive means improving over degree, negative means declining
+# A declining student may be higher risk even if their average GPA looks acceptable
+df["gpa_trend"] = df["gpa_sem5"] - df["gpa_sem1"]
+
 
 # 5. Create Risk Score (Target Variable)
 # ------------------------------------------------------------------
@@ -86,11 +93,18 @@ df["has_backlog"] = np.where(df["backlog_count"] > 0, 1, 0)
 # contributes most to dropout risk. Weights were decided after
 # reviewing literature on student retention.
 
+# Risk formula weights — based on student retention literature
+# Higher weight = stronger influence on dropout probability
+ATTENDANCE_WEIGHT = 0.3   # low attendance is a moderate risk signal
+GPA_WEIGHT        = 8     # GPA has the strongest influence on risk
+BACKLOG_WEIGHT    = 5     # each backlog significantly raises risk
+EVENT_WEIGHT      = 4     # disengagement from campus life raises risk
+
 risk_raw = (
-    (100 - df["attendance"]) * 0.3 +   # low attendance increases risk
-    (10  - df["avg_gpa"])    * 8   +   # lower GPA = more risk
-    df["backlog_count"]      * 5   +   # each backlog adds risk
-    (3   - df["event_score"])* 4        # less participation = higher risk
+    (100 - df["attendance"]) * ATTENDANCE_WEIGHT +   # low attendance increases risk
+    (10  - df["avg_gpa"])    * GPA_WEIGHT        +   # lower GPA = more risk
+    df["backlog_count"]      * BACKLOG_WEIGHT    +   # each backlog adds risk
+    (3   - df["event_score"])* EVENT_WEIGHT           # less participation = higher risk
 )
 
 # Normalize the score to a 0–1 range
@@ -122,7 +136,8 @@ features = [
     "gender",
     "course",
     "year",
-    "age"
+    "age",
+    "gpa_trend"
 ]
 
 X = df_encoded[features]
@@ -188,7 +203,7 @@ plt.ylabel("Predicted Risk Score")
 plt.title("Predicted vs Actual Risk Score (Test Set)")
 plt.legend()
 plt.tight_layout()
-plt.savefig("eval_predicted_vs_actual.png", dpi=150)
+plt.savefig(os.path.join(BASE_DIR, "eval_predicted_vs_actual.png"), dpi=150)
 plt.close()
 print("Plot saved: eval_predicted_vs_actual.png")
 
@@ -202,7 +217,7 @@ plt.xlabel("Predicted Risk Score")
 plt.ylabel("Residual (Actual - Predicted)")
 plt.title("Residual Plot (Test Set)")
 plt.tight_layout()
-plt.savefig("eval_residuals.png", dpi=150)
+plt.savefig(os.path.join(BASE_DIR, "eval_residuals.png"), dpi=150)
 plt.close()
 print("Plot saved: eval_residuals.png")
 
@@ -234,10 +249,10 @@ def get_risk_level(prob):
 df_display["risk_level"] = df_display["predicted_risk_probability"].apply(get_risk_level)
 
 # Save both versions — encoded one is used for prediction API, display one for the dashboard table
-df_encoded.to_csv("processed_student_data.csv", index=False)
-df_display.to_csv("display_student_data.csv", index=False)
+df_encoded.to_csv(os.path.join(BASE_DIR, "processed_student_data.csv"), index=False)
+df_display.to_csv(os.path.join(BASE_DIR, "display_student_data.csv"), index=False)
 
 # Save the trained model
-joblib.dump(model, "student_retention_model.pkl")
+joblib.dump(model, os.path.join(BASE_DIR, "student_retention_model.pkl"))
 
 print("\nModel and datasets saved successfully!")

@@ -7,6 +7,7 @@ from flask_cors import CORS
 import pandas as pd
 import joblib
 import os
+from config import FEATURES, FEATURE_LABELS
 
 app = Flask(__name__)
 CORS(app)  # allow requests from the React frontend running on a different port
@@ -20,31 +21,7 @@ model      = joblib.load(os.path.join(BASE_DIR, "student_retention_model.pkl"))
 df_display = pd.read_csv(os.path.join(BASE_DIR, "display_student_data.csv"))
 df_encoded = pd.read_csv(os.path.join(BASE_DIR, "processed_student_data.csv"))
 
-# These are the same features used during training in main.py
-features = [
-    "attendance",
-    "avg_gpa",
-    "has_backlog",
-    "backlog_count",
-    "event_score",
-    "gender",
-    "course",
-    "year",
-    "age"
-]
 
-# Human-readable names for the feature importance chart in the dashboard
-feature_labels = {
-    "attendance":    "Attendance",
-    "avg_gpa":       "Avg GPA",
-    "has_backlog":   "Has Backlog",
-    "backlog_count": "Backlog Count",
-    "event_score":   "Event Score",
-    "gender":        "Gender",
-    "course":        "Course",
-    "year":          "Year",
-    "age":           "Age",
-}
 
 
 # Route: Get all students
@@ -68,7 +45,7 @@ def predict():
     if student_row.empty:
         return jsonify({"error": "Student not found"}), 404
 
-    X_input = student_row[features]
+    X_input = student_row[FEATURES]
     risk_score = float(model.predict(X_input)[0])
     risk_score = round(max(0.0, min(1.0, risk_score)), 4)  # clip to [0, 1]
 
@@ -84,9 +61,9 @@ def feature_importance():
     total = importances.sum() if importances.sum() > 0 else 1.0
 
     result = []
-    for feat, imp in zip(features, importances):
+    for feat, imp in zip(FEATURES, importances):
         result.append({
-            "feature":    feature_labels.get(feat, feat),
+            "feature":    FEATURE_LABELS.get(feat, feat),
             "importance": round(float(imp / total) * 100, 2)
         })
 

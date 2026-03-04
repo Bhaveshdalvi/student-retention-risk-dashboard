@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { GraduationCap, Activity, RefreshCw } from "lucide-react";
 import { useStudents } from "@/context/StudentsContext";
 import { FullPageSpinner } from "@/components/Spinner";
+import { toast } from "@/components/ui/sonner";
 
 import { AnimatedBackground } from "@/components/dashboard/AnimatedBackground";
 import { KPICards } from "@/components/dashboard/KPICards";
@@ -18,8 +19,28 @@ import { ModelObservations } from "@/components/dashboard/ModelObservations";
 import { FeatureImportanceChart } from "@/components/dashboard/FeatureImportanceChart";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+const SLOW_TOAST_ID = "api-cold-start";
+
 const Index = () => {
   const { students, isLoading, isError } = useStudents();
+
+  // Listen for the "api-slow" event dispatched by fetchStudents in api.ts
+  // and show a Sonner toast — dismiss it automatically when loading completes.
+  useEffect(() => {
+    const handleSlow = (e: Event) => {
+      const msg = (e as CustomEvent<{ message: string }>).detail?.message
+        ?? "Server is waking up, this may take up to 30 seconds on first load...";
+      toast.loading(msg, { id: SLOW_TOAST_ID, duration: Infinity });
+    };
+    window.addEventListener("api-slow", handleSlow);
+    return () => window.removeEventListener("api-slow", handleSlow);
+  }, []);
+
+  useEffect(() => {
+    if (!isLoading) {
+      toast.dismiss(SLOW_TOAST_ID);
+    }
+  }, [isLoading]);
 
   // Loading state — happens on first load and after Render cold start
   if (isLoading || !students || students.length === 0) {
