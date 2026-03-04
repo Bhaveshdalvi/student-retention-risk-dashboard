@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Activity } from "lucide-react";
+import { GraduationCap, Activity, RefreshCw } from "lucide-react";
 import { useStudents } from "@/context/StudentsContext";
+import { FullPageSpinner } from "@/components/Spinner";
 
 import { AnimatedBackground } from "@/components/dashboard/AnimatedBackground";
 import { KPICards } from "@/components/dashboard/KPICards";
@@ -20,19 +21,28 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Index = () => {
   const { students, isLoading, isError } = useStudents();
 
-  // Prevent blank screen crash
+  // Loading state — happens on first load and after Render cold start
   if (isLoading || !students || students.length === 0) {
-    return (
-      <div className="min-h-screen flex items-center justify-center text-white">
-        Loading students...
-      </div>
-    );
+    return <FullPageSpinner label="Loading student data…" />;
   }
 
   if (isError) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-red-500">
-        Error loading students dataset.
+      <div className="min-h-screen flex items-center justify-center bg-background px-4">
+        <div className="glass-card p-8 max-w-sm w-full text-center space-y-4">
+          <p className="text-lg font-semibold text-foreground">Unable to load student data</p>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            The backend may be waking up from inactivity. Please wait a few
+            seconds and try again.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
+          >
+            <RefreshCw className="w-4 h-4" />
+            Retry
+          </button>
+        </div>
       </div>
     );
   }

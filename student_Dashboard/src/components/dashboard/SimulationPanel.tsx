@@ -195,6 +195,18 @@ export const SimulationPanel = memo(() => {
                       {getRiskLevel(result.predicted_risk_probability).label}
                     </Badge>
                   </div>
+                  {/* Rich prediction sentence */}
+                  {result.liveRisk !== undefined && (() => {
+                    const pct = Math.round(result.liveRisk! * 100);
+                    const level = getRiskLevel(result.liveRisk!).level;
+                    const colorClass = level === "high" ? "text-red-400" : level === "medium" ? "text-yellow-400" : "text-green-400";
+                    const label = level === "high" ? "High Risk" : level === "medium" ? "Medium Risk" : "Low Risk";
+                    return (
+                      <p className={`text-sm font-semibold mt-2 ${colorClass}`}>
+                        {label} — {pct}% probability of dropout
+                      </p>
+                    );
+                  })()}
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4">
