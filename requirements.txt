@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 flask==3.0.3
 flask-cors==4.0.1
 pandas==2.3.1
@@ -6,3 +7,13 @@ scikit-learn==1.7.1
 joblib==1.5.1
 matplotlib==3.10.5
 gunicorn==21.2.0
+=======
+flask==3.0.3
+flask-cors==4.0.1
+pandas==2.3.1
+numpy==1.26.4
+scikit-learn==1.7.1
+joblib==1.5.1
+matplotlib==3.10.5
+gunicorn==21.2.0
+>>>>>>> 926691f71617e8d64b6f9647d581c2cbb51fc820

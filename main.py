@@ -38,7 +38,11 @@ numeric_cols = [
     "age", "attendance",
     "gpa_sem1", "gpa_sem2", "gpa_sem3",
     "gpa_sem4", "gpa_sem5",
+<<<<<<< HEAD
     "backlog_count" 
+=======
+    "backlog_count"
+>>>>>>> 926691f71617e8d64b6f9647d581c2cbb51fc820
 ]
 
 for col in numeric_cols:
